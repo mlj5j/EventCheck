@@ -1,0 +1,492 @@
+#include <iostream>
+#include <sstream>
+#include <istream>
+#include <fstream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+#include <functional>
+
+#include "SimDataFormats/PileupSummaryInfo/interface/PileupSummaryInfo.h"
+
+#include "FWCore/Framework/interface/Frameworkfwd.h"
+#include "FWCore/Framework/interface/EDFilter.h"
+#include "FWCore/Framework/interface/MakerMacros.h"
+
+#include "FWCore/Framework/interface/ESHandle.h"
+#include "FWCore/Framework/interface/Event.h"
+#include "FWCore/ParameterSet/interface/ParameterSet.h"
+#include "FWCore/Framework/interface/EventSetup.h"
+
+#include "DataFormats/Common/interface/Handle.h"
+#include "DataFormats/Common/interface/Ref.h"
+#include "DataFormats/Common/interface/Handle.h"
+#include "DataFormats/CaloTowers/interface/CaloTowerCollection.h"
+
+#include "RecoLocalCalo/EcalRecAlgos/interface/EcalSeverityLevelAlgo.h"  
+#include "RecoLocalCalo/EcalRecAlgos/interface/EcalSeverityLevelAlgoRcd.h"  
+#include "RecoLocalCalo/EcalRecAlgos/interface/EcalCleaningAlgo.h"  
+
+#include "DataFormats/EcalDigi/interface/EcalTrigPrimCompactColl.h"
+#include "DataFormats/EcalDetId/interface/EcalTrigTowerDetId.h"
+#include "DataFormats/EcalDigi/interface/EcalTriggerPrimitiveSample.h"
+ 
+#include "DataFormats/L1GlobalTrigger/interface/L1GlobalTriggerReadoutSetupFwd.h"
+#include "DataFormats/L1GlobalTrigger/interface/L1GlobalTriggerReadoutSetup.h"
+#include "DataFormats/L1GlobalTrigger/interface/L1GlobalTriggerReadoutRecord.h"
+
+#include "CalibCalorimetry/EcalLaserCorrection/interface/EcalLaserDbRecord.h"
+#include "CalibCalorimetry/EcalLaserCorrection/interface/EcalLaserDbService.h"
+
+#include "CondFormats/DataRecord/interface/EcalChannelStatusRcd.h"
+#include "CondFormats/DataRecord/interface/EcalPedestalsRcd.h"
+
+#include "CondFormats/EcalObjects/interface/EcalPedestals.h"
+
+
+#include "DataFormats/L1GlobalTrigger/interface/L1GtTechnicalTriggerRecord.h"
+#include "DataFormats/L1GlobalTrigger/interface/L1GtTechnicalTrigger.h"
+
+#include "Geometry/Records/interface/IdealGeometryRecord.h"
+#include "SimDataFormats/GeneratorProducts/interface/GenEventInfoProduct.h"
+#include "DataFormats/JetReco/interface/PFJet.h"
+#include "DataFormats/JetReco/interface/PFJetCollection.h"
+#include "DataFormats/JetReco/interface/GenJet.h"
+#include "DataFormats/JetReco/interface/GenJetCollection.h"
+#include "DataFormats/HepMCCandidate/interface/GenParticle.h"
+#include "DataFormats/ParticleFlowCandidate/interface/PFCandidateFwd.h"
+#include "DataFormats/ParticleFlowCandidate/interface/PFCandidate.h"
+
+#include "DataFormats/ParticleFlowReco/interface/PFCluster.h"
+#include "DataFormats/ParticleFlowReco/interface/PFRecHit.h"
+#include "DataFormats/ParticleFlowReco/interface/PFRecHitFwd.h"
+#include "DataFormats/ParticleFlowReco/interface/PFLayer.h"
+
+
+
+#include "DataFormats/TrackReco/interface/Track.h"
+#include "DataFormats/TrackReco/interface/TrackFwd.h"
+
+
+#include "DataFormats/VertexReco/interface/Vertex.h"
+#include "DataFormats/VertexReco/interface/VertexFwd.h"
+
+
+#include "JetMETCorrections/MCJet/plugins/SpikeAnalyser.h" 
+#include "JetMETCorrections/MCJet/plugins/JetUtilMC.h"
+#include "JetMETCorrections/Objects/interface/JetCorrector.h"
+
+
+
+
+#include "Geometry/CaloTopology/interface/CaloTopology.h"
+#include "Geometry/CaloEventSetup/interface/CaloTopologyRecord.h"
+
+#include "DataFormats/EcalRecHit/interface/EcalUncalibratedRecHit.h"
+#include "DataFormats/EcalRecHit/interface/EcalRecHitCollections.h"
+#include "DataFormats/DetId/interface/DetId.h"
+#include "DataFormats/EcalDigi/interface/EcalDigiCollections.h"
+
+
+
+
+#include "DataFormats/EgammaReco/interface/BasicCluster.h"
+#include "DataFormats/EgammaReco/interface/BasicClusterFwd.h"
+#include "DataFormats/EgammaReco/interface/SuperCluster.h"
+#include "DataFormats/EgammaReco/interface/SuperClusterFwd.h"
+
+
+#include "DataFormats/EcalDetId/interface/EBDetId.h"
+#include "DataFormats/EcalDetId/interface/EEDetId.h"
+#include "DataFormats/EcalDetId/interface/EcalElectronicsId.h"
+
+
+#include "Geometry/CaloGeometry/interface/CaloGeometry.h"
+#include "RecoCaloTools/Navigation/interface/CaloNavigator.h"
+
+#include "DataFormats/GeometryVector/interface/GlobalPoint.h"
+
+#include "RecoEcal/EgammaCoreTools/interface/EcalClusterTools.h"
+#include "RecoEcal/EgammaCoreTools/interface/EcalTools.h"
+
+#include "Math/VectorUtil.h"
+#include "TVector3.h"
+
+using namespace edm;
+using namespace reco;
+using namespace std;
+
+DEFINE_FWK_MODULE(SpikeAnalyser);
+
+
+SpikeAnalyser::SpikeAnalyser(const edm::ParameterSet& cfg)
+  : bunchstartbx_(cfg.getParameter<std::vector<int> >("bunchstartbx"))
+{
+  jets_          = cfg.getParameter<std::string> ("jets");
+  histogramFile_ = cfg.getParameter<std::string> ("histogramFile");
+  tracks_        = cfg.getParameter<std::string> ("tracks");
+  vertex_coll_   = cfg.getParameter<std::string> ("vertex");
+  ebhitcoll_     = cfg.getParameter<std::string> ("EBRecHitCollection");
+  eehitcoll_     = cfg.getParameter<std::string> ("EERecHitCollection");
+  isMC_          = cfg.getParameter<bool>("IsMC");
+
+
+
+
+  edm::ParameterSet cleaningPs = 
+    cfg.getParameter<edm::ParameterSet>("cleaningConfig");
+  cleaningAlgo_ = new EcalCleaningAlgo(cleaningPs);
+
+
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+void SpikeAnalyser::beginJob() 
+{
+
+  file_          = new TFile(histogramFile_.c_str(),"RECREATE");
+  dataTree_      = new TTree("dataTree","dataTree");
+
+ // run/event info
+  
+  dataTree_->Branch("run",          &run,          "run/I");  
+  dataTree_->Branch("ev",           &ev,    	   "ev/I");
+  dataTree_->Branch("lumi",         &lumi,     	   "lumi/I");
+  dataTree_->Branch("bx",           &bx,       	   "bx/I");   
+  dataTree_->Branch("orbit",        &orbit,    	   "orbit/I");
+  dataTree_->Branch("bunchintrain", &bunchintrain, "bunchintrain/I");
+
+ //  primary vertex info
+
+  dataTree_->Branch("numvtx",      &numvtx,	  "numvtx/I");
+  dataTree_->Branch("numgoodvtx",  &numgoodvtx,	  "numgoodvtx/I");
+
+
+  // rechit info
+
+  dataTree_->Branch("rechit_ene",        &rechit_ene,        "rechit_ene/F");
+  dataTree_->Branch("rechit_et",         &rechit_et,         "rechit_et/F");
+  dataTree_->Branch("rechit_time",       &rechit_time,       "rechit_time/F");
+  dataTree_->Branch("rechit_ieta",       &rechit_ieta,       "rechit_ieta/I");
+  dataTree_->Branch("rechit_iphi",       &rechit_iphi,       "rechit_iphi/I");
+  dataTree_->Branch("rechit_eta",        &rechit_eta,        "rechit_eta/F");
+  dataTree_->Branch("rechit_phi",        &rechit_phi,        "rechit_phi/F");
+  dataTree_->Branch("rechit_swisscross", &rechit_swisscross, "rechit_swisscross/F");
+
+  dataTree_->Branch("rechit_chi2",       &rechit_chi2,       "rechit_chi2/F");
+  dataTree_->Branch("rechit_chi2oot",    &rechit_chi2oot,    "rechit_chi2oot/F");
+
+
+  dataTree_->Branch("rechit_flag_kweird",        &rechit_flag_kweird,        "rechit_flag_kweird/I");
+  dataTree_->Branch("rechit_flag_kdiweird",      &rechit_flag_kdiweird,      "rechit_flag_kdiweird/I");
+  dataTree_->Branch("rechit_flag_koot",          &rechit_flag_koot,          "rechit_flag_koot/I");
+
+
+  // db info
+
+  dataTree_->Branch("db_pedg12",        &db_pedg12,        "db_pedg12/F");
+  dataTree_->Branch("db_pedg6",         &db_pedg6,         "db_pedg6/F");
+  dataTree_->Branch("db_pedg1",         &db_pedg1,         "db_pedg1/F");
+
+  dataTree_->Branch("db_pedrmsg12",     &db_pedrmsg12,     "db_pedrmsg12/F");
+  dataTree_->Branch("db_pedrmsg6",      &db_pedrmsg6,      "db_pedrmsg6/F");
+  dataTree_->Branch("db_pedrmsg1",      &db_pedrmsg1,      "db_pedrmsg1/F");
+
+  dataTree_->Branch("lasercorr",        &lasercorr,        "lasercorr/F");
+
+
+
+  // digi info
+
+  dataTree_->Branch("digi_adc", &digi_adc,  "digi_adc[10]/I"); 
+  dataTree_->Branch("digi_gainid", &digi_gainid,  "digi_gainid[10]/I");
+
+
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+void SpikeAnalyser::endJob() 
+{
+  if (file_ !=0) 
+    {
+      file_->cd();
+ 
+      dataTree_   ->Write();
+   
+    }
+  file_ = 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+float SpikeAnalyser::recHitE( const DetId id, 
+                           const EcalRecHitCollection & recHits,
+                           int di, int dj )
+ {
+   // in the barrel:   di = dEta   dj = dPhi
+   // in the endcap:   di = dX     dj = dY
+   
+   DetId nid;
+   if( id.subdetId() == EcalBarrel) nid = EBDetId::offsetBy( id, di, dj );
+   else if( id.subdetId() == EcalEndcap) nid = EEDetId::offsetBy( id, di, dj );
+   
+   return ( nid == DetId(0) ? 0 : recHitE( nid, recHits ) );
+}
+
+float SpikeAnalyser::recHitE( const DetId id, 
+				 const EcalRecHitCollection &recHits) {
+    
+   if ( id.rawId() == 0 ) return 0;
+
+   EcalRecHitCollection::const_iterator it = recHits.find( id );
+   if ( it != recHits.end() ){
+     float ene= (*it).energy();
+     return ene;
+   }
+   return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+void SpikeAnalyser::analyze(edm::Event const& event, edm::EventSetup const& iSetup) 
+{ 
+
+
+ for (int i=0;i<10;i++) {
+
+    digi_adc[i]=0;
+    digi_gainid[i]=0;
+ 
+  }
+
+ run=0, ev=0, lumi=0, bx=0, orbit=0;
+
+
+ numvtx=0;
+ numgoodvtx=0;
+
+
+ edm::ESHandle<EcalLaserDbService> laser;
+ iSetup.get<EcalLaserDbRecord>().get(laser);
+  
+
+
+  run         = event.id().run();
+  ev          = event.id().event();
+  lumi        = event.luminosityBlock();
+  bx          = event.bunchCrossing();
+  orbit       = event.orbitNumber(); 
+
+
+
+  // if (run==203708) {
+
+ // get position in bunch train
+
+  bunchintrain=-1;
+
+  for (std::vector<int>::const_iterator bxit=bunchstartbx_.begin(); bxit!=bunchstartbx_.end(); ++bxit) {
+
+    Int_t bxpos=bx - *bxit;
+
+
+    // 50ns
+    if (bxpos>=0 && bxpos<=70) bunchintrain=bxpos/2;
+    // 25ns
+    // if (bxpos>=0 && bxpos<=50) bunchintrain=bxpos;
+
+  }
+
+
+  edm::Handle<VertexCollection> vertices;
+  event.getByLabel(vertex_coll_,vertices);
+  VertexCollection::const_iterator vit;
+
+  numvtx=vertices->size();
+
+
+  if (vertices->size()>0) {
+
+    for (vit=vertices->begin();vit!=vertices->end();++vit) {
+      
+      
+      int vtx_chi2=vit->chi2();
+      int vtx_ndof=vit->ndof();
+
+      int vtx_isfake=vit->isFake();
+
+      if (vit->isValid() && vtx_isfake==0 && vtx_ndof>4 && vtx_chi2>0 && vtx_chi2<10000) {
+	
+        numgoodvtx++;
+	
+      }
+      
+    }
+    
+  } 
+  
+
+  edm::ESHandle<CaloGeometry> pG;
+  iSetup.get<CaloGeometryRecord>().get(pG);
+  const CaloGeometry* geo=pG.product();
+
+  edm::ESHandle<CaloTopology> pTopology;
+  iSetup.get<CaloTopologyRecord>().get(pTopology);
+
+
+  // edm::ESHandle<EcalChannelStatus> chanstat;
+  // iSetup.get<EcalChannelStatusRcd>().get(chanstat);
+  // const EcalChannelStatus* cstat=chanstat.product();
+ 
+  edm::ESHandle<EcalPedestals> ecalped;
+  iSetup.get<EcalPedestalsRcd>().get(ecalped);
+  const EcalPedestals* eped=ecalped.product();
+
+
+ // Rechit Collection
+
+  Handle<EcalRecHitCollection> EBhits;
+  event.getByLabel("ecalRecHit","EcalRecHitsEB",EBhits);
+
+
+  // Digis, from RAW
+ 
+  Handle<EBDigiCollection>  EBdigis;
+  event.getByLabel("ecalEBunpacker","ebDigis",EBdigis);
+
+
+  // Rechit loop
+
+  for (EcalRecHitCollection::const_iterator hitItr = EBhits->begin(); hitItr != EBhits->end(); ++hitItr) {
+
+
+    rechit_flag_kweird=0;
+    rechit_flag_kdiweird=0;
+    rechit_flag_koot=0;
+    
+    rechit_swisscross=0;
+    rechit_ene=0, rechit_et=0, rechit_time=0;
+    
+    rechit_ieta=0, rechit_iphi=0, rechit_eta=0, rechit_phi=0;
+    
+    rechit_chi2=0, rechit_chi2oot=0;
+    
+    db_pedg12=0, db_pedg6=0, db_pedg1=0;
+    db_pedrmsg12=0, db_pedrmsg6=0, db_pedrmsg1=0;
+    lasercorr=0;
+    
+    EcalRecHit hit = (*hitItr);
+    EBDetId det    = hit.id(); 
+    rechit_ieta    = det.ieta();      
+    rechit_iphi    = det.iphi();
+    rechit_ene     = hit.energy();
+    rechit_time    = hit.time();
+    rechit_chi2    = hit.chi2();
+    rechit_chi2oot = hit.outOfTimeChi2();
+    
+    int ebhashedid = det.hashedIndex();
+    
+    
+    GlobalPoint poseb=geo->getPosition(hit.detid());
+    
+    
+    rechit_eta=poseb.eta();
+    rechit_phi=poseb.phi();
+    float pf=1.0/cosh(rechit_eta);
+    
+    rechit_et=rechit_ene*pf;
+  
+    if (rechit_et<3.0) continue;
+
+    // swiss-cross calculation
+
+    float s41=0;
+    float s42=0;
+    float s43=0;
+    float s44=0;
+    
+    s41 = recHitE( det, *EBhits,  1,  0 );
+    s42 = recHitE( det, *EBhits,  -1,  0 );
+    s43 = recHitE( det, *EBhits,  0,  1 );
+    s44 = recHitE( det, *EBhits,  0,  -1 );
+    
+    float s4=s41+s42+s43+s44;
+
+
+    if (rechit_ene>0) rechit_swisscross=1.0-s4/rechit_ene;
+    
+
+    // read pedestals from DB
+
+    const EcalPedestals::Item *aped=0;
+    aped=&eped->barrel(ebhashedid);
+    db_pedg12=aped->mean_x12;
+    db_pedg6=aped->mean_x6;
+    db_pedg1=aped->mean_x1;
+
+    db_pedrmsg12=aped->rms_x12;
+    db_pedrmsg6=aped->rms_x6;
+    db_pedrmsg1=aped->rms_x1;
+
+    // read lasercalib from db
+    lasercorr=laser->getLaserCorrection(EBDetId(det), event.time());
+
+
+    if (hit.checkFlag(EcalRecHit::kWeird)) rechit_flag_kweird=1;
+    if (hit.checkFlag(EcalRecHit::kDiWeird)) rechit_flag_kdiweird=1;
+    if (hit.checkFlag(EcalRecHit::kOutOfTime)) rechit_flag_koot=1;
+    
+    
+    //   if (rechit_et>5.0 && abs(rechit_time)>3) rechit_flag_koot=1;
+    
+    // mask out noisy channels in data
+    
+    if ((rechit_ieta==11 && rechit_iphi==68) || (rechit_ieta==68 && rechit_iphi==74) || (rechit_ieta==-83 && rechit_iphi==189) || (rechit_ieta==-75 && rechit_iphi==199)) continue;
+
+
+
+    
+    // select spike-like hits
+    // if ((rechit_flag_koot+rechit_flag_kweird+rechit_flag_kdiweird) && rechit_et>5.0) {
+
+
+    // select high energy hits
+    if (rechit_et>3.0) {
+      
+      // find digi corresponding to rechit
+      
+      EBDigiCollection::const_iterator digiItrEB= EBdigis->begin();
+      while(digiItrEB != EBdigis->end() && digiItrEB->id() != hitItr->id())
+	{
+	  digiItrEB++;
+	}
+      
+      if (digiItrEB != EBdigis->end()) {
+	
+	EBDataFrame df(*digiItrEB);
+	for(int i=0; i<10;++i)
+	  {
+	    int ebdigiadc=df.sample(i).adc();		
+	    int ebdigigain=df.sample(i).gainId();
+	    digi_adc[i]=ebdigiadc;
+	    digi_gainid[i]=ebdigigain;
+	  }
+	
+	dataTree_->Fill();
+	
+      }
+    }
+  }
+  
+  // }
+  
+  
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+SpikeAnalyser::~SpikeAnalyser() 
+{
+  delete file_;
+  delete dataTree_;
+}
+//}

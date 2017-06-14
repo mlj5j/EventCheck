@@ -1,0 +1,91 @@
+#ifndef SPIKE_ANALYSERMC_H
+#define SPIKE_ANALYSERMC_H
+
+#include "TTree.h"
+#include "TH1D.h"
+#include "TH3D.h"
+#include "TH2F.h"
+#include "TFile.h"
+#include "FWCore/Framework/interface/ESHandle.h"
+#include "Geometry/CaloGeometry/interface/CaloGeometry.h"
+#include "Geometry/CaloTopology/interface/CaloTopology.h"
+#include "Geometry/CaloEventSetup/interface/CaloTopologyRecord.h"
+
+#include "DataFormats/EcalRecHit/interface/EcalUncalibratedRecHit.h"
+#include "DataFormats/EcalRecHit/interface/EcalRecHitCollections.h"
+#include "DataFormats/DetId/interface/DetId.h"
+
+#include "FWCore/Framework/interface/EDAnalyzer.h"
+#include "FWCore/Utilities/interface/InputTag.h"
+
+class EcalCleaningAlgo;
+
+class SpikeAnalyserMC : public edm::EDAnalyzer 
+{
+ public:
+  explicit SpikeAnalyserMC(edm::ParameterSet const& cfg);
+  virtual void beginJob();
+  virtual void analyze(edm::Event const& e, edm::EventSetup const& iSetup);
+  virtual void endJob();
+  ~SpikeAnalyserMC();
+  
+ private:	
+
+  float recHitE( const DetId id, 
+		 const EcalRecHitCollection &recHits);
+  
+  float recHitE( const DetId id, 
+		 const EcalRecHitCollection & recHits,
+		 int di, int dj );
+  
+
+  std::string histogramFile_;
+  std::string jets_;
+  std::string tracks_;
+  std::string vertex_coll_;
+  std::string ebhitcoll_;
+  std::string eehitcoll_;
+  const std::vector<int> bunchstartbx_;
+  
+  bool isMC_;
+
+  EcalCleaningAlgo * cleaningAlgo_;  
+
+  
+  TFile* file_;
+  TTree* dataTree_;
+  
+  
+  int run, ev, lumi, bx, orbit, bunchintrain;
+  int numvtx, numgoodvtx;
+
+  float rechit_ene, rechit_et, rechit_time;
+
+  int rechit_ieta, rechit_iphi;
+
+  float rechit_eta, rechit_phi;
+
+  float rechit_swisscross;
+
+  float rechit_chi2, rechit_chi2oot;
+
+  int rechit_flag_koot, rechit_flag_kweird, rechit_flag_kdiweird;
+
+  float db_pedg12, db_pedg6, db_pedg1;
+  float db_pedrmsg12, db_pedrmsg6, db_pedrmsg1;
+  float lasercorr;
+
+  int digi_adc[10];
+  int digi_gainid[10];
+ 
+  int spikedigi_adc[10];
+  int spikedigi_gainid[10];
+
+  int spike_adcmax, spike_gainmax, spike_sampmax;
+
+  float sc_energy, sc_et, sc_eta, sc_phi;
+
+
+
+};
+#endif  
