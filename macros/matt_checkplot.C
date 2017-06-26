@@ -165,7 +165,7 @@
   t1.SetTextSize(0.05);
   t1.DrawLatex(0.90,0.86,"E_{T} [GeV]");
 
-  c1.SaveAs("exomgg_0t_rereco_ev3_ebet_photon2.png");
+  c1.SaveAs("plots/exomgg_0t_rereco_ev3_ebet_photon2.png");
 
 
   TCanvas c2("c2","",10,10,1200,600);
@@ -197,7 +197,7 @@
   t1.DrawLatex(0.17,0.8,"EE-");
   t1.DrawLatex(0.8,0.8,"EE+");
 
-  c2.SaveAs("exomgg_0t_rereco_ev3_eeet_photon2.png");
+  c2.SaveAs("plots/exomgg_0t_rereco_ev3_eeet_photon2.png");
 
 
 
@@ -226,7 +226,7 @@
       eboccet->GetYaxis()->SetRangeUser(etamax[k]-8,etamax[k]+8);
       eboccet->Draw("colz,text");
       t1.DrawLatex(0.83,0.875,"E_{T} [GeV]");
-      sprintf(txt,"transverse_energy_zoom_%d.png",k+1);
+      sprintf(txt,"plots/transverse_energy_zoom_%d.png",k+1);
       c3.SaveAs(txt);
   }
 
@@ -262,7 +262,7 @@
       ebtime->GetYaxis()->SetRangeUser(etamax[k]-8,etamax[k]+8);
       ebtime->Draw("colz,text");
       t1.DrawLatex(0.83,0.875,"Time [ns]");
-      sprintf(txt,"EB_rechit_time_zoomed_%d.png",k+1);
+      sprintf(txt,"plots/EB_rechit_time_zoomed_%d.png",k+1);
       c4.SaveAs(txt);
   }
 
@@ -284,7 +284,7 @@
       ebicval->GetYaxis()->SetRangeUser(etamax[k]-8,etamax[k]+8);
       ebicval->Draw("colz,text");
       t1.DrawLatex(0.83,0.875,"IC");
-      sprintf(txt,"EB_intercalib_map_zoomed_%d.png",k+1);
+      sprintf(txt,"plots/EB_intercalib_map_zoomed_%d.png",k+1);
       c4.SaveAs(txt);
   }
 
@@ -307,7 +307,7 @@
       eblascorr->GetYaxis()->SetRangeUser(etamax[k]-8,etamax[k]+8);
       eblascorr->Draw("colz,text");
       t1.DrawLatex(0.83,0.875,"Las. corr.");
-      sprintf(txt,"Las_corr_zoomed_%d.png",k+1);
+      sprintf(txt,"plots/Las_corr_zoomed_%d.png",k+1);
       c4.SaveAs(txt);
   }
   /*
@@ -338,7 +338,7 @@
   t1.SetTextSize(0.05);
   t1.DrawLatex(0.88,0.91,"Las. Corr.");
 
-  c1.SaveAs("exomgg_0t_rereco_ev3_eblascorr_all_photon2.png");
+  c1.SaveAs("plots/exomgg_0t_rereco_ev3_eblascorr_all_photon2.png");
 
 
 
@@ -358,7 +358,7 @@
   t1.SetTextSize(0.05);
   t1.DrawLatex(0.88,0.91,"Las. Corr.");
 
-  c1.SaveAs("exomgg_0t_rereco_ev3_eblascorr_good_photon2.png");
+  c1.SaveAs("plots/exomgg_0t_rereco_ev3_eblascorr_good_photon2.png");
 
 
   
@@ -372,12 +372,12 @@
   eblascorrall_1d->SetXTitle("Laser correction");
   eblascorrall_1d->Draw();
 
-  c4.SaveAs("exomgg_0t_rereco_ev3_eblascorr1d_all_photon2.png");
+  c4.SaveAs("plots/exomgg_0t_rereco_ev3_eblascorr1d_all_photon2.png");
 
   eblascorrgood_1d->SetLineColor(1);
   eblascorrgood_1d->SetXTitle("Laser correction");
   eblascorrgood_1d->Draw();
 
-  c4.SaveAs("exomgg_0t_rereco_ev3_eblascorr1d_good_photon2.png");
+  c4.SaveAs("plots/exomgg_0t_rereco_ev3_eblascorr1d_good_photon2.png");
   
 }

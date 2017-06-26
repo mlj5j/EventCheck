@@ -1,0 +1,3417 @@
+19-Apr-2017 16:48:01 CEST  Initiating request to open file file:/afs/cern.ch/work/p/pbarria/public/SingleEvent/CMSSW_8_3_0/src/JetMETCorrections/MCJet/pick1eventRUN274200.root
+19-Apr-2017 16:48:05 CEST  Successfully opened file file:/afs/cern.ch/work/p/pbarria/public/SingleEvent/CMSSW_8_3_0/src/JetMETCorrections/MCJet/pick1eventRUN274200.root
+Begin processing the 1st record. Run 274200, Event 352051316, LumiSection 216 at 19-Apr-2017 16:48:20.400 CEST
+RUN=274200 EVENT=352051316 lumi=216
+
+
+****EB HITS****
+
+ieta,iphi=-34 330 energy=2.1091 eta,phi=-0.592744 -0.707294 et=1.78604 time=-0.359989
+swisscross=0.59383 lasercorr=1.04308 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04308 ic: 1.0437 adc/gev: 0.0397978
+pedestal values:  G12: 209.103,1.3557  G6: 194.091,0.876694  G1: 189.629,0.695246
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=-69 47 energy=2.51334 eta,phi=-1.20337 0.63712 et=1.38419 time=-0.284033
+swisscross=0.813722 lasercorr=1.07838 chi2=0.503937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07838 ic: 0.847 adc/gev: 0.0397978
+pedestal values:  G12: 190.081,1.38223  G6: 195.138,0.848367  G1: 213.115,0.592234
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=7 253 energy=7.29858 eta,phi=0.121083 -2.05113 et=7.2454 time=0.611539
+swisscross=0.676078 lasercorr=1.06241 chi2=10.0787
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06241 ic: 0.972 adc/gev: 0.0397978
+pedestal values:  G12: 192.092,1.32817  G6: 211.062,0.856735  G1: 192.976,0.650859
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=7 256 energy=1.25026 eta,phi=0.121195 -1.99945 et=1.24114 time=2.62791
+swisscross=-0.432814 lasercorr=1.07279 chi2=3.02362
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07279 ic: 0.989 adc/gev: 0.0397978
+pedestal values:  G12: 207.921,1.35236  G6: 201.945,0.856236  G1: 217.854,0.632324
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=8 233 energy=1.78299 eta,phi=0.138425 -2.40019 et=1.76604 time=0.0763985
+swisscross=-1.1091 lasercorr=1.06159 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06159 ic: 0.9975 adc/gev: 0.0397978
+pedestal values:  G12: 198.58,1.29545  G6: 202.516,0.866914  G1: 213.081,0.672152
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=8 238 energy=11.4828 eta,phi=0.138559 -2.31399 et=11.3735 time=0.146025
+swisscross=-2.4424 lasercorr=1.06803 chi2=4.53543
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06803 ic: 0.9515 adc/gev: 0.0397978
+pedestal values:  G12: 191.219,1.29117  G6: 206.163,0.890403  G1: 203.985,0.636368
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=191 gainid=1
+sample=2 adc=191 gainid=1
+sample=3 adc=191 gainid=1
+sample=4 adc=195 gainid=1
+sample=5 adc=401 gainid=1
+sample=6 adc=477 gainid=1
+sample=7 adc=448 gainid=1
+sample=8 adc=388 gainid=1
+sample=9 adc=333 gainid=1
+sample=10 adc=287 gainid=1
+
+ieta,iphi=8 239 energy=14.1687 eta,phi=0.138442 -2.29664 et=14.034 time=0.474706
+swisscross=-6.92996 lasercorr=1.09108 chi2=2.01575
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.09108 ic: 0.9761 adc/gev: 0.0397978
+pedestal values:  G12: 195.905,1.26497  G6: 199.858,0.88711  G1: 205.637,0.639454
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=196 gainid=1
+sample=2 adc=196 gainid=1
+sample=3 adc=196 gainid=1
+sample=4 adc=200 gainid=1
+sample=5 adc=446 gainid=1
+sample=6 adc=534 gainid=1
+sample=7 adc=499 gainid=1
+sample=8 adc=429 gainid=1
+sample=9 adc=363 gainid=1
+sample=10 adc=310 gainid=1
+
+ieta,iphi=8 240 energy=1.43491 eta,phi=0.138567 -2.27948 et=1.42124 time=-0.124362
+swisscross=-17.745 lasercorr=1.08728 chi2=3.02362
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.08728 ic: 0.9227 adc/gev: 0.0397978
+pedestal values:  G12: 211.882,1.29473  G6: 198.581,0.848679  G1: 201.561,0.620328
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=213 gainid=1
+sample=2 adc=213 gainid=1
+sample=3 adc=215 gainid=1
+sample=4 adc=215 gainid=1
+sample=5 adc=241 gainid=1
+sample=6 adc=251 gainid=1
+sample=7 adc=246 gainid=1
+sample=8 adc=238 gainid=1
+sample=9 adc=231 gainid=1
+sample=10 adc=226 gainid=1
+
+ieta,iphi=8 252 energy=1.45336 eta,phi=0.138545 -2.06847 et=1.43952 time=-0.195646
+swisscross=0.0806957 lasercorr=1.04695 chi2=1.51181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04695 ic: 0.9512 adc/gev: 0.0397978
+pedestal values:  G12: 199.433,1.29996  G6: 196.876,0.876887  G1: 209.634,0.640485
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=9 66 energy=1.7007 eta,phi=0.155889 0.969596 et=1.68025 time=0.481721
+swisscross=-5.39759 lasercorr=1.0323 chi2=4.53543
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.0323 ic: 1.0636 adc/gev: 0.0397978
+pedestal values:  G12: 210.102,1.32316  G6: 206.185,0.891847  G1: 212.08,0.690948
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=9 67 energy=3.11819 eta,phi=0.15575 0.986945 et=3.08074 time=-0.232449
+swisscross=-7.21298 lasercorr=1.04814 chi2=2.01575
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04814 ic: 1.1521 adc/gev: 0.0397978
+pedestal values:  G12: 200.19,1.32804  G6: 207.302,0.901353  G1: 203.132,0.693043
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=9 68 energy=2.60337 eta,phi=0.155885 1.00411 et=2.57205 time=0.846212
+swisscross=-8.07145 lasercorr=1.04444 chi2=4.0315
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04444 ic: 1.2027 adc/gev: 0.0397978
+pedestal values:  G12: 193.134,1.31724  G6: 197.388,0.839126  G1: 210.697,0.584583
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=9 69 energy=1.47076 eta,phi=0.155747 1.02146 et=1.4531 time=-0.00803328
+swisscross=-5.83747 lasercorr=1.02652 chi2=3.52756
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.02652 ic: 1.0597 adc/gev: 0.0397978
+pedestal values:  G12: 198.182,1.34927  G6: 193.506,0.854319  G1: 206.254,0.747233
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=9 233 energy=3.08693 eta,phi=0.155748 -2.40018 et=3.04986 time=0.60402
+swisscross=0.182832 lasercorr=1.07292 chi2=7.55906
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07292 ic: 1.0325 adc/gev: 0.0397978
+pedestal values:  G12: 204.307,1.34663  G6: 184.618,0.834333  G1: 209.258,0.660405
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=9 237 energy=2.55384 eta,phi=0.155759 -2.33115 et=2.52317 time=-2.49805
+swisscross=-9.05015 lasercorr=1.097 chi2=13.1024
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.097 ic: 0.9427 adc/gev: 0.0397978
+pedestal values:  G12: 211.384,1.30532  G6: 202.29,0.847348  G1: 207.91,0.536206
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=9 238 energy=23.7906 eta,phi=0.155899 -2.31399 et=23.5044 time=-0.161795
+swisscross=-3.85242 lasercorr=1.1025 chi2=2.01575
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.1025 ic: 1.0118 adc/gev: 0.0397978
+pedestal values:  G12: 208.848,1.26454  G6: 191.589,0.909541  G1: 213.237,0.618605
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=209 gainid=1
+sample=2 adc=209 gainid=1
+sample=3 adc=209 gainid=1
+sample=4 adc=219 gainid=1
+sample=5 adc=625 gainid=1
+sample=6 adc=746 gainid=1
+sample=7 adc=684 gainid=1
+sample=8 adc=571 gainid=1
+sample=9 adc=466 gainid=1
+sample=10 adc=384 gainid=1
+
+ieta,iphi=9 239 energy=98.8977 eta,phi=0.155767 -2.29664 et=97.7099 time=-0.117958
+swisscross=0.453879 lasercorr=1.04741 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04741 ic: 0.9667 adc/gev: 0.0397978
+pedestal values:  G12: 186.612,1.34013  G6: 190.082,0.881766  G1: 193.211,0.658708
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=188 gainid=1
+sample=2 adc=189 gainid=1
+sample=3 adc=189 gainid=1
+sample=4 adc=224 gainid=1
+sample=5 adc=2047 gainid=1
+sample=6 adc=2647 gainid=1
+sample=7 adc=2381 gainid=1
+sample=8 adc=1870 gainid=1
+sample=9 adc=1385 gainid=1
+sample=10 adc=1004 gainid=1
+
+ieta,iphi=9 240 energy=12.0085 eta,phi=0.155908 -2.27947 et=11.864 time=-0.448158
+swisscross=-7.72782 lasercorr=1.10631 chi2=4.0315
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.10631 ic: 0.8757 adc/gev: 0.0397978
+pedestal values:  G12: 208.048,1.31925  G6: 213.978,0.86655  G1: 207.279,0.607234
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=210 gainid=1
+sample=2 adc=210 gainid=1
+sample=3 adc=209 gainid=1
+sample=4 adc=212 gainid=1
+sample=5 adc=439 gainid=1
+sample=6 adc=519 gainid=1
+sample=7 adc=489 gainid=1
+sample=8 adc=426 gainid=1
+sample=9 adc=364 gainid=1
+sample=10 adc=314 gainid=1
+
+ieta,iphi=9 241 energy=2.60974 eta,phi=0.155772 -2.25819 et=2.5784 time=1.20438
+swisscross=-7.69567 lasercorr=1.06985 chi2=8.06299
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06985 ic: 1.0249 adc/gev: 0.0397978
+pedestal values:  G12: 193.635,1.4159  G6: 190.561,0.901754  G1: 189.774,0.590805
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=10 65 energy=1.72066 eta,phi=0.173061 0.95244 et=1.69521 time=0.59471
+swisscross=-5.46308 lasercorr=1.06683 chi2=5.54331
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06683 ic: 1.0862 adc/gev: 0.0397978
+pedestal values:  G12: 199.451,1.31914  G6: 205.139,0.852905  G1: 204.941,0.612065
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=10 66 energy=6.64477 eta,phi=0.173209 0.969602 et=6.54633 time=0.438267
+swisscross=-5.34893 lasercorr=1.00706 chi2=3.02362
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.00706 ic: 1.4225 adc/gev: 0.0397978
+pedestal values:  G12: 206.997,1.33815  G6: 191.119,0.883013  G1: 207.828,0.56149
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=208 gainid=1
+sample=2 adc=207 gainid=1
+sample=3 adc=207 gainid=1
+sample=4 adc=209 gainid=1
+sample=5 adc=298 gainid=1
+sample=6 adc=329 gainid=1
+sample=7 adc=316 gainid=1
+sample=8 adc=289 gainid=1
+sample=9 adc=265 gainid=1
+sample=10 adc=246 gainid=1
+
+ieta,iphi=10 67 energy=20.5626 eta,phi=0.173056 0.986953 et=20.2585 time=0.443761
+swisscross=-32.2071 lasercorr=1.05319 chi2=2.51969
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.05319 ic: 1.0523 adc/gev: 0.0397978
+pedestal values:  G12: 204.556,1.36806  G6: 194.78,0.865095  G1: 209.102,0.61661
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=204 gainid=1
+sample=2 adc=204 gainid=1
+sample=3 adc=204 gainid=1
+sample=4 adc=208 gainid=1
+sample=5 adc=548 gainid=1
+sample=6 adc=679 gainid=1
+sample=7 adc=632 gainid=1
+sample=8 adc=533 gainid=1
+sample=9 adc=437 gainid=1
+sample=10 adc=362 gainid=1
+
+ieta,iphi=10 68 energy=18.4691 eta,phi=0.173205 1.00411 et=18.1955 time=0.754162
+swisscross=-0.598138 lasercorr=1.04892 chi2=1.00787
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04892 ic: 0.9821 adc/gev: 0.0397978
+pedestal values:  G12: 200.207,1.40232  G6: 211.743,0.832462  G1: 209.027,0.692027
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=204 gainid=1
+sample=2 adc=205 gainid=1
+sample=3 adc=204 gainid=1
+sample=4 adc=207 gainid=1
+sample=5 adc=533 gainid=1
+sample=6 adc=667 gainid=1
+sample=7 adc=626 gainid=1
+sample=8 adc=528 gainid=1
+sample=9 adc=434 gainid=1
+sample=10 adc=360 gainid=1
+
+ieta,iphi=10 69 energy=6.35018 eta,phi=0.173052 1.02147 et=6.25626 time=0.270026
+swisscross=-4.81056 lasercorr=1.07334 chi2=3.52756
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07334 ic: 1.2069 adc/gev: 0.0397978
+pedestal values:  G12: 197.062,1.30226  G6: 197.135,0.832013  G1: 197.39,0.632747
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=10 70 energy=1.54246 eta,phi=0.173203 1.03863 et=1.5196 time=1.26377
+swisscross=-5.38664 lasercorr=1.03745 chi2=1.51181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.03745 ic: 1.1152 adc/gev: 0.0397978
+pedestal values:  G12: 201.504,1.35498  G6: 198.133,0.86403  G1: 196.116,0.60832
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=10 238 energy=2.50754 eta,phi=0.17322 -2.31398 et=2.47039 time=1.08362
+swisscross=-10.5101 lasercorr=1.06736 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06736 ic: 0.9483 adc/gev: 0.0397978
+pedestal values:  G12: 200.337,1.35402  G6: 201.49,0.886158  G1: 197.124,0.717267
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=201 gainid=1
+sample=2 adc=200 gainid=1
+sample=3 adc=200 gainid=1
+sample=4 adc=199 gainid=1
+sample=5 adc=244 gainid=1
+sample=6 adc=264 gainid=1
+sample=7 adc=258 gainid=1
+sample=8 adc=245 gainid=1
+sample=9 adc=232 gainid=1
+sample=10 adc=222 gainid=1
+
+ieta,iphi=10 239 energy=4.04231 eta,phi=0.173074 -2.29663 et=3.98251 time=0.252354
+swisscross=-24.6559 lasercorr=1.06992 chi2=6.04724
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06992 ic: 0.9797 adc/gev: 0.0397978
+pedestal values:  G12: 204.891,1.30503  G6: 188.691,0.913533  G1: 208.986,0.685464
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=208 gainid=1
+sample=2 adc=207 gainid=1
+sample=3 adc=207 gainid=1
+sample=4 adc=207 gainid=1
+sample=5 adc=276 gainid=1
+sample=6 adc=304 gainid=1
+sample=7 adc=294 gainid=1
+sample=8 adc=272 gainid=1
+sample=9 adc=253 gainid=1
+sample=10 adc=239 gainid=1
+
+ieta,iphi=10 240 energy=1.86577 eta,phi=0.173231 -2.27947 et=1.83812 time=0.601044
+swisscross=-13.0751 lasercorr=1.07409 chi2=5.54331
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07409 ic: 0.9965 adc/gev: 0.0397978
+pedestal values:  G12: 190.387,1.35976  G6: 208.186,0.904474  G1: 195.041,0.648791
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=189 gainid=1
+sample=2 adc=190 gainid=1
+sample=3 adc=189 gainid=1
+sample=4 adc=190 gainid=1
+sample=5 adc=222 gainid=1
+sample=6 adc=235 gainid=1
+sample=7 adc=229 gainid=1
+sample=8 adc=220 gainid=1
+sample=9 adc=211 gainid=1
+sample=10 adc=204 gainid=1
+
+ieta,iphi=10 241 energy=9.71152 eta,phi=0.17308 -2.25818 et=9.56785 time=0.204481
+swisscross=0.371681 lasercorr=1.05418 chi2=6.04724
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.05418 ic: 1.0101 adc/gev: 0.0397978
+pedestal values:  G12: 209.703,1.34616  G6: 208.133,0.797366  G1: 205.205,0.642342
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=10 243 energy=1.57632 eta,phi=0.173069 -2.22367 et=1.553 time=-0.804777
+swisscross=-4.64689 lasercorr=1.06872 chi2=3.52756
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06872 ic: 0.9343 adc/gev: 0.0397978
+pedestal values:  G12: 203.721,1.33582  G6: 206.173,0.923862  G1: 205.417,0.653674
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=10 249 energy=3.46458 eta,phi=0.173052 -2.12013 et=3.41335 time=-0.522995
+swisscross=0.676143 lasercorr=1.05868 chi2=2.01575
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.05868 ic: 0.994 adc/gev: 0.0397978
+pedestal values:  G12: 207.957,1.39567  G6: 192.418,0.851276  G1: 206.491,0.652486
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=11 65 energy=3.2034 eta,phi=0.190404 0.952442 et=3.1462 time=0.284911
+swisscross=-6.24875 lasercorr=1.07443 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07443 ic: 1.1984 adc/gev: 0.0397978
+pedestal values:  G12: 206.75,1.34781  G6: 207.313,0.866893  G1: 213.395,0.631739
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=11 66 energy=18.2032 eta,phi=0.190566 0.969615 et=17.8776 time=0.759896
+swisscross=-36.1485 lasercorr=1.07674 chi2=15.1181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07674 ic: 1.1023 adc/gev: 0.0397978
+pedestal values:  G12: 212.2,1.23066  G6: 201.498,0.853147  G1: 206.716,0.652346
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=211 gainid=1
+sample=2 adc=213 gainid=1
+sample=3 adc=212 gainid=1
+sample=4 adc=217 gainid=1
+sample=5 adc=509 gainid=1
+sample=6 adc=611 gainid=1
+sample=7 adc=568 gainid=1
+sample=8 adc=484 gainid=1
+sample=9 adc=406 gainid=1
+sample=10 adc=344 gainid=1
+
+ieta,iphi=11 67 energy=654.592 eta,phi=0.190398 0.986956 et=642.904 time=0.0861928
+swisscross=0.823471 lasercorr=1.04516 chi2=64
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04516 ic: 1.0808 adc/gev: 0.0397978
+pedestal values:  G12: 195.779,1.32096  G6: 205.966,0.808914  G1: 204.993,0.583315
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=196 gainid=1
+sample=2 adc=195 gainid=1
+sample=3 adc=196 gainid=1
+sample=4 adc=418 gainid=1
+sample=5 adc=4029 gainid=2
+sample=6 adc=1693 gainid=3
+sample=7 adc=1524 gainid=3
+sample=8 adc=1206 gainid=3
+sample=9 adc=912 gainid=3
+sample=10 adc=684 gainid=3
+
+ieta,iphi=11 69 energy=15.4158 eta,phi=0.190394 1.02147 et=15.1405 time=0.0758756
+swisscross=-0.2417 lasercorr=1.06224 chi2=2.51969
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06224 ic: 1.5208 adc/gev: 0.0397978
+pedestal values:  G12: 208.819,1.2827  G6: 208.474,0.822374  G1: 201.924,0.654727
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=11 70 energy=2.38636 eta,phi=0.190559 1.03864 et=2.34368 time=0.794885
+swisscross=-7.30894 lasercorr=1.06657 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06657 ic: 1.1019 adc/gev: 0.0397978
+pedestal values:  G12: 203.467,1.32157  G6: 209.247,0.82488  G1: 205.064,0.600478
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=11 243 energy=6.99825 eta,phi=0.190413 -2.22366 et=6.87327 time=0.578411
+swisscross=0.45547 lasercorr=1.07255 chi2=2.51969
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07255 ic: 1.0846 adc/gev: 0.0397978
+pedestal values:  G12: 200.486,1.33895  G6: 190.926,0.859064  G1: 207.757,0.578212
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=11 244 energy=1.48836 eta,phi=0.190574 -2.20649 et=1.46174 time=0.587999
+swisscross=-4.80046 lasercorr=1.05767 chi2=9.07087
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.05767 ic: 0.9266 adc/gev: 0.0397978
+pedestal values:  G12: 194.837,1.31563  G6: 206.774,0.825077  G1: 209.125,0.592606
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=12 64 energy=2.14456 eta,phi=0.207953 0.935107 et=2.09901 time=-8.23824
+swisscross=-0.715764 lasercorr=1.04647 chi2=64
+kWeird=0 kDiWeird=0 kOOT=1
+calibration values:  lasercalib: 1.04647 ic: 1.1743 adc/gev: 0.0397978
+pedestal values:  G12: 203.574,1.32608  G6: 201.213,0.846898  G1: 210.926,0.656993
+Rechit flags:
+ kGood=0
+ kPoorReco=0
+ kOutOfTime=1
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=12 65 energy=2.56956 eta,phi=0.207768 0.952451 et=2.51508 time=0.439681
+swisscross=-6.11431 lasercorr=1.07481 chi2=7.55906
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07481 ic: 1.0709 adc/gev: 0.0397978
+pedestal values:  G12: 212.233,1.26766  G6: 209.651,0.835796  G1: 203.59,0.6096
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=12 66 energy=11.7804 eta,phi=0.207945 0.969621 et=11.5303 time=0.444978
+swisscross=-7.57224 lasercorr=1.06134 chi2=4.53543
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06134 ic: 1.2964 adc/gev: 0.0397978
+pedestal values:  G12: 190.97,1.31188  G6: 194.366,0.857215  G1: 209.717,0.647493
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=193 gainid=1
+sample=2 adc=193 gainid=1
+sample=3 adc=194 gainid=1
+sample=4 adc=197 gainid=1
+sample=5 adc=369 gainid=1
+sample=6 adc=412 gainid=1
+sample=7 adc=382 gainid=1
+sample=8 adc=336 gainid=1
+sample=9 adc=294 gainid=1
+sample=10 adc=261 gainid=1
+
+ieta,iphi=12 67 energy=76.7889 eta,phi=0.207761 0.986964 et=75.1609 time=0.421534
+swisscross=-8.71453 lasercorr=1.04676 chi2=2.01575
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04676 ic: 1.0714 adc/gev: 0.0397978
+pedestal values:  G12: 203.165,1.33316  G6: 200.402,0.838117  G1: 199.173,0.623674
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=204 gainid=1
+sample=2 adc=204 gainid=1
+sample=3 adc=204 gainid=1
+sample=4 adc=231 gainid=1
+sample=5 adc=1526 gainid=1
+sample=6 adc=1946 gainid=1
+sample=7 adc=1758 gainid=1
+sample=8 adc=1392 gainid=1
+sample=9 adc=1049 gainid=1
+sample=10 adc=779 gainid=1
+
+ieta,iphi=12 68 energy=69.7956 eta,phi=0.20794 1.00413 et=68.3134 time=0.338429
+swisscross=-0.367124 lasercorr=1.03236 chi2=4.0315
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.03236 ic: 1.027 adc/gev: 0.0397978
+pedestal values:  G12: 199.623,1.22735  G6: 205.376,0.884364  G1: 194.496,0.635546
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=199 gainid=1
+sample=2 adc=200 gainid=1
+sample=3 adc=200 gainid=1
+sample=4 adc=221 gainid=1
+sample=5 adc=1429 gainid=1
+sample=6 adc=1872 gainid=1
+sample=7 adc=1704 gainid=1
+sample=8 adc=1355 gainid=1
+sample=9 adc=1023 gainid=1
+sample=10 adc=760 gainid=1
+
+ieta,iphi=12 69 energy=10.4052 eta,phi=0.207758 1.02148 et=10.1846 time=0.587428
+swisscross=-7.97094 lasercorr=1.07149 chi2=3.52756
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07149 ic: 1.1916 adc/gev: 0.0397978
+pedestal values:  G12: 196.589,1.28925  G6: 201.322,0.835676  G1: 210.021,0.642655
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=12 70 energy=2.14816 eta,phi=0.207937 1.03865 et=2.10254 time=0.97713
+swisscross=-6.48188 lasercorr=1.06807 chi2=0.503937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06807 ic: 1.1872 adc/gev: 0.0397978
+pedestal values:  G12: 200.448,1.24352  G6: 196.518,0.805397  G1: 196.178,0.526106
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=12 73 energy=1.70043 eta,phi=0.207759 1.0905 et=1.66438 time=-0.523907
+swisscross=0.226057 lasercorr=1.06908 chi2=7.05512
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06908 ic: 1.1298 adc/gev: 0.0397978
+pedestal values:  G12: 196.461,1.30289  G6: 196.483,0.812642  G1: 196.457,0.580368
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=13 65 energy=1.15228 eta,phi=0.225114 0.95246 et=1.12369 time=2.08373
+swisscross=-5.62556 lasercorr=1.04166 chi2=14.1102
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04166 ic: 1.1555 adc/gev: 0.0397978
+pedestal values:  G12: 204.21,1.32084  G6: 206.47,0.839992  G1: 198.868,0.612987
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=13 66 energy=3.42314 eta,phi=0.225305 0.969627 et=3.33806 time=-0.404477
+swisscross=-5.9283 lasercorr=1.07736 chi2=2.51969
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07736 ic: 1.165 adc/gev: 0.0397978
+pedestal values:  G12: 192.602,1.31702  G6: 194.586,0.880873  G1: 204.063,0.685656
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=13 67 energy=9.79969 eta,phi=0.225107 0.986973 et=9.55654 time=1.00363
+swisscross=-8.18601 lasercorr=1.04561 chi2=6.55118
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04561 ic: 1.7012 adc/gev: 0.0397978
+pedestal values:  G12: 201.719,1.6911  G6: 199.975,0.998403  G1: 193.843,0.677335
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=13 68 energy=8.22517 eta,phi=0.225299 1.00414 et=8.02074 time=-1.42826
+swisscross=-9.55991 lasercorr=1.04941 chi2=13.1024
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04941 ic: 1.187 adc/gev: 0.0397978
+pedestal values:  G12: 189.084,1.33421  G6: 195.916,0.86983  G1: 198.55,0.669535
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=13 69 energy=5.98504 eta,phi=0.225103 1.02149 et=5.83655 time=-0.29756
+swisscross=-2.82793 lasercorr=1.06728 chi2=1.51181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06728 ic: 1.1981 adc/gev: 0.0397978
+pedestal values:  G12: 207.867,1.34511  G6: 202.908,0.883357  G1: 209.52,0.665651
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=13 70 energy=2.5439 eta,phi=0.225297 1.03865 et=2.48067 time=0.107407
+swisscross=-3.03498 lasercorr=1.04535 chi2=3.02362
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04535 ic: 0.975 adc/gev: 0.0397978
+pedestal values:  G12: 202.758,1.34952  G6: 203.506,0.96693  G1: 201.386,0.638613
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=14 65 energy=1.35689 eta,phi=0.242442 0.952468 et=1.31796 time=-6.31311
+swisscross=-0.823154 lasercorr=1.05497 chi2=21.1654
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.05497 ic: 1.058 adc/gev: 0.0397978
+pedestal values:  G12: 192.959,1.34145  G6: 212.306,0.797699  G1: 199.022,0.632235
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=14 67 energy=1.58283 eta,phi=0.242434 0.986982 et=1.53743 time=-1.12861
+swisscross=-6.83175 lasercorr=1.04851 chi2=1.51181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04851 ic: 1.141 adc/gev: 0.0397978
+pedestal values:  G12: 197.673,1.38171  G6: 194.933,0.832931  G1: 197.183,0.598251
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=14 68 energy=1.2767 eta,phi=0.242641 1.00415 et=1.24001 time=0.280484
+swisscross=-8.42316 lasercorr=1.06213 chi2=5.54331
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06213 ic: 1.1788 adc/gev: 0.0397978
+pedestal values:  G12: 210.658,1.35077  G6: 210.367,0.877941  G1: 195.361,0.583176
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=14 69 energy=1.73602 eta,phi=0.24243 1.02149 et=1.68622 time=-0.0182402
+swisscross=-4.70273 lasercorr=1.08222 chi2=7.55906
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.08222 ic: 1.1722 adc/gev: 0.0397978
+pedestal values:  G12: 199.015,1.27449  G6: 197.307,0.858824  G1: 210.626,0.633274
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=14 70 energy=1.55505 eta,phi=0.242638 1.03866 et=1.51037 time=2.23001
+swisscross=-5.58737 lasercorr=1.06434 chi2=4.0315
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06434 ic: 1.2274 adc/gev: 0.0397978
+pedestal values:  G12: 210.009,1.31869  G6: 208.526,0.811464  G1: 206.085,0.661262
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=212 gainid=1
+sample=2 adc=212 gainid=1
+sample=3 adc=212 gainid=1
+sample=4 adc=212 gainid=1
+sample=5 adc=234 gainid=1
+sample=6 adc=243 gainid=1
+sample=7 adc=243 gainid=1
+sample=8 adc=235 gainid=1
+sample=9 adc=229 gainid=1
+sample=10 adc=223 gainid=1
+
+ieta,iphi=14 71 energy=3.50626 eta,phi=0.242429 1.05601 et=3.40569 time=0.310645
+swisscross=-5.06022 lasercorr=1.06406 chi2=6.04724
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06406 ic: 1.0282 adc/gev: 0.0397978
+pedestal values:  G12: 200.548,1.26898  G6: 205.863,0.82523  G1: 203.826,0.61404
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=202 gainid=1
+sample=2 adc=202 gainid=1
+sample=3 adc=203 gainid=1
+sample=4 adc=203 gainid=1
+sample=5 adc=262 gainid=1
+sample=6 adc=284 gainid=1
+sample=7 adc=277 gainid=1
+sample=8 adc=258 gainid=1
+sample=9 adc=241 gainid=1
+sample=10 adc=227 gainid=1
+
+ieta,iphi=14 72 energy=1.3714 eta,phi=0.242639 1.07317 et=1.332 time=-0.287832
+swisscross=-3.79171 lasercorr=1.0909 chi2=2.51969
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.0909 ic: 1.1624 adc/gev: 0.0397978
+pedestal values:  G12: 195.324,1.34049  G6: 202.969,0.833044  G1: 204.944,0.574512
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=194 gainid=1
+sample=2 adc=195 gainid=1
+sample=3 adc=196 gainid=1
+sample=4 adc=196 gainid=1
+sample=5 adc=216 gainid=1
+sample=6 adc=223 gainid=1
+sample=7 adc=220 gainid=1
+sample=8 adc=213 gainid=1
+sample=9 adc=209 gainid=1
+sample=10 adc=205 gainid=1
+
+ieta,iphi=15 66 energy=1.62792 eta,phi=0.259971 0.969639 et=1.57442 time=-8.63388
+swisscross=-0.0281105 lasercorr=1.06661 chi2=50.3937
+kWeird=0 kDiWeird=0 kOOT=1
+calibration values:  lasercalib: 1.06661 ic: 1.1879 adc/gev: 0.0397978
+pedestal values:  G12: 212.83,1.30886  G6: 211.637,0.806238  G1: 201.457,0.683065
+Rechit flags:
+ kGood=0
+ kPoorReco=0
+ kOutOfTime=1
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=15 69 energy=1.08326 eta,phi=0.25974 1.0215 et=1.04772 time=0.0644896
+swisscross=-3.58708 lasercorr=1.04387 chi2=2.51969
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04387 ic: 1.107 adc/gev: 0.0397978
+pedestal values:  G12: 198.043,1.37296  G6: 208.944,0.89223  G1: 194.827,0.630707
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=15 70 energy=2.45749 eta,phi=0.259962 1.03866 et=2.37672 time=0.210881
+swisscross=-7.61751 lasercorr=1.0752 chi2=1.00787
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.0752 ic: 1.1495 adc/gev: 0.0397978
+pedestal values:  G12: 191.041,1.33428  G6: 201.847,0.858884  G1: 198.765,0.659559
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=191 gainid=1
+sample=2 adc=191 gainid=1
+sample=3 adc=193 gainid=1
+sample=4 adc=193 gainid=1
+sample=5 adc=230 gainid=1
+sample=6 adc=244 gainid=1
+sample=7 adc=239 gainid=1
+sample=8 adc=228 gainid=1
+sample=9 adc=218 gainid=1
+sample=10 adc=210 gainid=1
+
+ieta,iphi=15 71 energy=17.7459 eta,phi=0.259739 1.05602 et=17.1637 time=0.413922
+swisscross=0.36626 lasercorr=1.07904 chi2=5.54331
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07904 ic: 1.139 adc/gev: 0.0397978
+pedestal values:  G12: 207.021,1.27971  G6: 204.525,0.891586  G1: 191.438,0.680758
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=207 gainid=1
+sample=2 adc=208 gainid=1
+sample=3 adc=207 gainid=1
+sample=4 adc=208 gainid=1
+sample=5 adc=460 gainid=1
+sample=6 adc=572 gainid=1
+sample=7 adc=542 gainid=1
+sample=8 adc=465 gainid=1
+sample=9 adc=391 gainid=1
+sample=10 adc=333 gainid=1
+
+ieta,iphi=15 72 energy=2.31717 eta,phi=0.259963 1.07318 et=2.24102 time=1.4872
+swisscross=-7.91624 lasercorr=1.02005 chi2=3.02362
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.02005 ic: 1.2189 adc/gev: 0.0397978
+pedestal values:  G12: 198.865,1.37948  G6: 196.453,0.84465  G1: 206.976,0.641937
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=202 gainid=1
+sample=2 adc=200 gainid=1
+sample=3 adc=201 gainid=1
+sample=4 adc=201 gainid=1
+sample=5 adc=235 gainid=1
+sample=6 adc=250 gainid=1
+sample=7 adc=247 gainid=1
+sample=8 adc=237 gainid=1
+sample=9 adc=227 gainid=1
+sample=10 adc=218 gainid=1
+
+ieta,iphi=16 71 energy=2.9654 eta,phi=0.277085 1.05602 et=2.85509 time=-2.09205
+swisscross=-7.0181 lasercorr=1.03328 chi2=13.6063
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.03328 ic: 1.1357 adc/gev: 0.0397978
+pedestal values:  G12: 190.597,1.31632  G6: 202.925,0.907581  G1: 202.643,0.636125
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=191 gainid=1
+sample=2 adc=192 gainid=1
+sample=3 adc=190 gainid=1
+sample=4 adc=192 gainid=1
+sample=5 adc=241 gainid=1
+sample=6 adc=255 gainid=1
+sample=7 adc=247 gainid=1
+sample=8 adc=233 gainid=1
+sample=9 adc=220 gainid=1
+sample=10 adc=210 gainid=1
+
+ieta,iphi=16 73 energy=1.60503 eta,phi=0.277088 1.09053 et=1.54533 time=0.846502
+swisscross=-0.0796883 lasercorr=1.05585 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.05585 ic: 1.1834 adc/gev: 0.0397978
+pedestal values:  G12: 210.348,1.32488  G6: 214.42,0.870678  G1: 208.63,0.605602
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=16 252 energy=1.24735 eta,phi=0.277324 -2.0684 et=1.20087 time=-0.0579283
+swisscross=0.172366 lasercorr=1.10959 chi2=0
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.10959 ic: 1.0452 adc/gev: 0.0397978
+pedestal values:  G12: 203.262,1.41664  G6: 196.105,0.855037  G1: 199.981,0.646882
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=17 71 energy=4.47431 eta,phi=0.294453 1.05603 et=4.28712 time=0.608996
+swisscross=0.145872 lasercorr=1.03936 chi2=4.0315
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.03936 ic: 1.2637 adc/gev: 0.0397978
+pedestal values:  G12: 206.302,1.32376  G6: 183.765,0.872785  G1: 201.022,0.608067
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=17 270 energy=1.05181 eta,phi=0.294705 -1.75384 et=1.00773 time=-14.3925
+swisscross=1 lasercorr=1.08678 chi2=64
+kWeird=0 kDiWeird=0 kOOT=1
+calibration values:  lasercalib: 1.08678 ic: 0.7723 adc/gev: 0.0397978
+pedestal values:  G12: 191.811,1.32917  G6: 209.758,0.891555  G1: 213.582,0.620714
+Rechit flags:
+ kGood=0
+ kPoorReco=0
+ kOutOfTime=1
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=19 66 energy=1.82343 eta,phi=0.329425 0.96967 et=1.72877 time=-6.36681
+swisscross=0.935241 lasercorr=1.04529 chi2=19.1496
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04529 ic: 1.3505 adc/gev: 0.0397978
+pedestal values:  G12: 207.809,1.31601  G6: 192.827,0.863303  G1: 201.745,0.59814
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=21 260 energy=1.17191 eta,phi=0.364173 -1.93031 et=1.09827 time=-0.771132
+swisscross=0.617133 lasercorr=1.05636 chi2=1.00787
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.05636 ic: 0.9712 adc/gev: 0.0397978
+pedestal values:  G12: 202.535,1.40417  G6: 202.2,0.869734  G1: 201.371,0.645347
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=23 250 energy=3.69894 eta,phi=0.3989 -2.10287 et=3.42298 time=-0.232423
+swisscross=0.65379 lasercorr=1.07316 chi2=7.05512
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07316 ic: 1.004 adc/gev: 0.0397978
+pedestal values:  G12: 189.079,1.3212  G6: 197.778,0.845746  G1: 213.068,0.609304
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=23 254 energy=1.30163 eta,phi=0.398909 -2.03384 et=1.20452 time=0.969019
+swisscross=-10.9936 lasercorr=1.07305 chi2=1.00787
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07305 ic: 1.0444 adc/gev: 0.0397978
+pedestal values:  G12: 191.803,1.32407  G6: 193.558,0.869494  G1: 212.663,0.591766
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=23 255 energy=2.61724 eta,phi=0.398581 -2.0165 et=2.42227 time=0.365148
+swisscross=-4.69397 lasercorr=1.08263 chi2=12.0945
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.08263 ic: 1.0614 adc/gev: 0.0397978
+pedestal values:  G12: 197.208,1.24051  G6: 199.516,0.863969  G1: 204.356,0.640591
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=23 256 energy=1.10705 eta,phi=0.398921 -1.99933 et=1.02445 time=1.75171
+swisscross=-2.11735 lasercorr=1.06145 chi2=8.06299
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06145 ic: 1.0297 adc/gev: 0.0397978
+pedestal values:  G12: 203.291,1.34662  G6: 200.681,0.83516  G1: 196.691,0.627901
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=24 252 energy=1.27273 eta,phi=0.416267 -2.06835 et=1.1699 time=-1.13993
+swisscross=-0.582807 lasercorr=1.07587 chi2=1.51181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07587 ic: 0.9528 adc/gev: 0.0397978
+pedestal values:  G12: 197.435,1.28561  G6: 200.209,0.905546  G1: 204.954,0.535503
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=24 253 energy=1.09199 eta,phi=0.415924 -2.051 et=1.0039 time=1.01481
+swisscross=-16.0855 lasercorr=1.06759 chi2=4.0315
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06759 ic: 1.0043 adc/gev: 0.0397978
+pedestal values:  G12: 207.108,1.27321  G6: 198.641,0.870595  G1: 206.021,0.611884
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=24 254 energy=12.4478 eta,phi=0.416274 -2.03384 et=11.442 time=0.730915
+swisscross=-0.479923 lasercorr=1.11586 chi2=8.06299
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.11586 ic: 0.9851 adc/gev: 0.0397978
+pedestal values:  G12: 193.737,1.31573  G6: 193.568,0.860512  G1: 213.183,0.576354
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=193 gainid=1
+sample=2 adc=193 gainid=1
+sample=3 adc=193 gainid=1
+sample=4 adc=196 gainid=1
+sample=5 adc=406 gainid=1
+sample=6 adc=481 gainid=1
+sample=7 adc=450 gainid=1
+sample=8 adc=391 gainid=1
+sample=9 adc=334 gainid=1
+sample=10 adc=290 gainid=1
+
+ieta,iphi=24 255 energy=12.2599 eta,phi=0.415934 -2.01649 et=11.2708 time=0.305698
+swisscross=-1.34753 lasercorr=1.08459 chi2=2.51969
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.08459 ic: 1.0604 adc/gev: 0.0397978
+pedestal values:  G12: 208.355,1.28019  G6: 193.674,0.824837  G1: 212.182,0.627491
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=207 gainid=1
+sample=2 adc=207 gainid=1
+sample=3 adc=208 gainid=1
+sample=4 adc=213 gainid=1
+sample=5 adc=416 gainid=1
+sample=6 adc=481 gainid=1
+sample=7 adc=451 gainid=1
+sample=8 adc=395 gainid=1
+sample=9 adc=341 gainid=1
+sample=10 adc=300 gainid=1
+
+ieta,iphi=24 279 energy=1.78887 eta,phi=0.415971 -1.59839 et=1.64453 time=-0.289613
+swisscross=0.528115 lasercorr=1.05513 chi2=9.07087
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.05513 ic: 0.8423 adc/gev: 0.0397978
+pedestal values:  G12: 192.864,1.30416  G6: 195.81,0.790271  G1: 190.857,0.613849
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=25 253 energy=4.64409 eta,phi=0.43326 -2.05099 et=4.23988 time=0.189832
+swisscross=-0.402122 lasercorr=1.07761 chi2=1.51181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07761 ic: 1.0218 adc/gev: 0.0397978
+pedestal values:  G12: 190.195,1.38501  G6: 209.084,0.871656  G1: 213.415,0.618467
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=25 254 energy=3.76827 eta,phi=0.433623 -2.03383 et=3.43978 time=1.38137
+swisscross=-8.47617 lasercorr=1.09747 chi2=7.05512
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.09747 ic: 0.9683 adc/gev: 0.0397978
+pedestal values:  G12: 210.105,1.25261  G6: 198.102,0.850816  G1: 201.976,0.665441
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=212 gainid=1
+sample=2 adc=211 gainid=1
+sample=3 adc=213 gainid=1
+sample=4 adc=213 gainid=1
+sample=5 adc=280 gainid=1
+sample=6 adc=304 gainid=1
+sample=7 adc=297 gainid=1
+sample=8 adc=277 gainid=1
+sample=9 adc=257 gainid=1
+sample=10 adc=243 gainid=1
+
+ieta,iphi=25 255 energy=13.3322 eta,phi=0.43327 -2.01648 et=12.1718 time=0.756673
+swisscross=-0.998628 lasercorr=1.06448 chi2=7.05512
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06448 ic: 0.9995 adc/gev: 0.0397978
+pedestal values:  G12: 209.334,1.32204  G6: 191.369,0.857468  G1: 194.682,0.587725
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=211 gainid=1
+sample=2 adc=211 gainid=1
+sample=3 adc=211 gainid=1
+sample=4 adc=213 gainid=1
+sample=5 adc=448 gainid=1
+sample=6 adc=528 gainid=1
+sample=7 adc=495 gainid=1
+sample=8 adc=428 gainid=1
+sample=9 adc=365 gainid=1
+sample=10 adc=316 gainid=1
+
+ieta,iphi=25 256 energy=1.25843 eta,phi=0.433636 -1.99932 et=1.14872 time=-1.98418
+swisscross=-12.7949 lasercorr=1.08672 chi2=14.1102
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.08672 ic: 0.9677 adc/gev: 0.0397978
+pedestal values:  G12: 203.129,1.5214  G6: 200.71,0.867759  G1: 203.615,0.656423
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=202 gainid=1
+sample=2 adc=203 gainid=1
+sample=3 adc=201 gainid=1
+sample=4 adc=206 gainid=1
+sample=5 adc=231 gainid=1
+sample=6 adc=237 gainid=1
+sample=7 adc=231 gainid=1
+sample=8 adc=225 gainid=1
+sample=9 adc=217 gainid=1
+sample=10 adc=215 gainid=1
+
+ieta,iphi=25 260 energy=1.35225 eta,phi=0.433681 -1.93028 et=1.23434 time=0.325692
+swisscross=-0.102462 lasercorr=1.08155 chi2=1.51181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.08155 ic: 1.0181 adc/gev: 0.0397978
+pedestal values:  G12: 195.654,1.32068  G6: 207.261,0.857925  G1: 208.577,0.593822
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=26 253 energy=1.19252 eta,phi=0.455281 -2.05099 et=1.07877 time=0.37749
+swisscross=-10.3455 lasercorr=1.08976 chi2=1.51181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.08976 ic: 0.9679 adc/gev: 0.0397978
+pedestal values:  G12: 191.896,1.41067  G6: 203.212,0.884189  G1: 204.784,0.576398
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=26 254 energy=5.28458 eta,phi=0.45566 -2.03382 et=4.77974 time=0.324452
+swisscross=-1.85477 lasercorr=1.04983 chi2=9.07087
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.04983 ic: 0.9625 adc/gev: 0.0397978
+pedestal values:  G12: 193.764,1.39723  G6: 205.382,0.815517  G1: 213.575,0.648556
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=197 gainid=1
+sample=2 adc=198 gainid=1
+sample=3 adc=196 gainid=1
+sample=4 adc=199 gainid=1
+sample=5 adc=297 gainid=1
+sample=6 adc=329 gainid=1
+sample=7 adc=312 gainid=1
+sample=8 adc=283 gainid=1
+sample=9 adc=257 gainid=1
+sample=10 adc=236 gainid=1
+
+ieta,iphi=26 255 energy=9.3596 eta,phi=0.455292 -2.01648 et=8.46679 time=0.0856588
+swisscross=-1.87457 lasercorr=1.07569 chi2=1.51181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07569 ic: 1.0172 adc/gev: 0.0397978
+pedestal values:  G12: 200.605,1.2366  G6: 206.973,0.84574  G1: 210.769,0.586198
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=201 gainid=1
+sample=2 adc=201 gainid=1
+sample=3 adc=200 gainid=1
+sample=4 adc=205 gainid=1
+sample=5 adc=370 gainid=1
+sample=6 adc=416 gainid=1
+sample=7 adc=391 gainid=1
+sample=8 adc=346 gainid=1
+sample=9 adc=305 gainid=1
+sample=10 adc=273 gainid=1
+
+ieta,iphi=26 256 energy=3.40536 eta,phi=0.455674 -1.9993 et=3.08002 time=-3.50444
+swisscross=-3.35121 lasercorr=1.07954 chi2=20.1575
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07954 ic: 1.0061 adc/gev: 0.0397978
+pedestal values:  G12: 209.818,1.30473  G6: 209.088,0.815048  G1: 208.299,0.607834
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=212 gainid=1
+sample=2 adc=211 gainid=1
+sample=3 adc=211 gainid=1
+sample=4 adc=216 gainid=1
+sample=5 adc=280 gainid=1
+sample=6 adc=292 gainid=1
+sample=7 adc=281 gainid=1
+sample=8 adc=263 gainid=1
+sample=9 adc=247 gainid=1
+sample=10 adc=234 gainid=1
+
+ieta,iphi=27 253 energy=2.93701 eta,phi=0.472545 -2.05098 et=2.63707 time=-0.985658
+swisscross=-0.32584 lasercorr=1.05628 chi2=10.5827
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.05628 ic: 0.9423 adc/gev: 0.0397978
+pedestal values:  G12: 196.529,1.29705  G6: 195.514,0.847351  G1: 209.044,0.57673
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=27 255 energy=4.8826 eta,phi=0.472556 -2.01647 et=4.38394 time=-0.0798334
+swisscross=-1.847 lasercorr=1.06651 chi2=6.04724
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06651 ic: 0.8889 adc/gev: 0.0397978
+pedestal values:  G12: 208.202,1.30091  G6: 211.789,0.877707  G1: 207.305,0.686972
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=27 256 energy=3.2618 eta,phi=0.472951 -1.9993 et=2.92816 time=-0.240339
+swisscross=-4.43193 lasercorr=1.05224 chi2=5.54331
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.05224 ic: 1.0031 adc/gev: 0.0397978
+pedestal values:  G12: 200.852,1.27857  G6: 202.762,0.861389  G1: 201.677,0.61356
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=202 gainid=1
+sample=2 adc=202 gainid=1
+sample=3 adc=202 gainid=1
+sample=4 adc=204 gainid=1
+sample=5 adc=263 gainid=1
+sample=6 adc=280 gainid=1
+sample=7 adc=272 gainid=1
+sample=8 adc=255 gainid=1
+sample=9 adc=239 gainid=1
+sample=10 adc=225 gainid=1
+
+ieta,iphi=27 257 energy=7.69857 eta,phi=0.472573 -1.98196 et=6.91226 time=0.0441216
+swisscross=0.13452 lasercorr=1.06405 chi2=3.02362
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06405 ic: 0.9793 adc/gev: 0.0397978
+pedestal values:  G12: 190.639,1.30216  G6: 198.189,0.850278  G1: 192.026,0.570626
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=190 gainid=1
+sample=2 adc=191 gainid=1
+sample=3 adc=190 gainid=1
+sample=4 adc=193 gainid=1
+sample=5 adc=331 gainid=1
+sample=6 adc=376 gainid=1
+sample=7 adc=356 gainid=1
+sample=8 adc=318 gainid=1
+sample=9 adc=282 gainid=1
+sample=10 adc=253 gainid=1
+
+ieta,iphi=27 293 energy=1.70562 eta,phi=0.472545 -1.35285 et=1.53143 time=-0.551523
+swisscross=-5.80809 lasercorr=1.09497 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.09497 ic: 0.7848 adc/gev: 0.0397978
+pedestal values:  G12: 197.595,1.26839  G6: 207.772,0.858601  G1: 200.205,0.644815
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=198 gainid=1
+sample=2 adc=196 gainid=1
+sample=3 adc=197 gainid=1
+sample=4 adc=199 gainid=1
+sample=5 adc=236 gainid=1
+sample=6 adc=248 gainid=1
+sample=7 adc=243 gainid=1
+sample=8 adc=232 gainid=1
+sample=9 adc=224 gainid=1
+sample=10 adc=217 gainid=1
+
+ieta,iphi=27 294 energy=7.069 eta,phi=0.472937 -1.33568 et=6.34598 time=-0.692988
+swisscross=-0.498618 lasercorr=1.08506 chi2=3.02362
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.08506 ic: 0.8366 adc/gev: 0.0397978
+pedestal values:  G12: 198.64,1.34439  G6: 207.738,0.859915  G1: 211.815,0.650464
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=200 gainid=1
+sample=2 adc=200 gainid=1
+sample=3 adc=200 gainid=1
+sample=4 adc=205 gainid=1
+sample=5 adc=350 gainid=1
+sample=6 adc=396 gainid=1
+sample=7 adc=375 gainid=1
+sample=8 adc=336 gainid=1
+sample=9 adc=297 gainid=1
+sample=10 adc=266 gainid=1
+
+ieta,iphi=27 295 energy=2.64792 eta,phi=0.472556 -1.31834 et=2.37749 time=-1.86032
+swisscross=-4.10049 lasercorr=1.06341 chi2=3.02362
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06341 ic: 0.8333 adc/gev: 0.0397978
+pedestal values:  G12: 192.721,1.27522  G6: 203.36,0.835523  G1: 208.125,0.622307
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=194 gainid=1
+sample=2 adc=200 gainid=1
+sample=3 adc=201 gainid=1
+sample=4 adc=202 gainid=1
+sample=5 adc=255 gainid=1
+sample=6 adc=273 gainid=1
+sample=7 adc=264 gainid=1
+sample=8 adc=249 gainid=1
+sample=9 adc=233 gainid=1
+sample=10 adc=222 gainid=1
+
+ieta,iphi=28 253 energy=1.51164 eta,phi=0.489789 -2.05098 et=1.34684 time=0.0786048
+swisscross=-1.6207 lasercorr=1.0726 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.0726 ic: 0.9335 adc/gev: 0.0397978
+pedestal values:  G12: 209.227,1.33327  G6: 197.078,0.859216  G1: 193.056,0.686567
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=28 256 energy=1.73131 eta,phi=0.490208 -1.99929 et=1.54226 time=-0.0719708
+swisscross=-2.36526 lasercorr=1.06565 chi2=3.52756
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06565 ic: 1.0169 adc/gev: 0.0397978
+pedestal values:  G12: 192.862,1.3254  G6: 202.817,0.859329  G1: 206.082,0.632456
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=196 gainid=1
+sample=2 adc=195 gainid=1
+sample=3 adc=194 gainid=1
+sample=4 adc=194 gainid=1
+sample=5 adc=224 gainid=1
+sample=6 adc=233 gainid=1
+sample=7 adc=230 gainid=1
+sample=8 adc=221 gainid=1
+sample=9 adc=213 gainid=1
+sample=10 adc=208 gainid=1
+
+ieta,iphi=28 257 energy=1.88976 eta,phi=0.489819 -1.98195 et=1.68371 time=-0.0382804
+swisscross=-4.24905 lasercorr=1.06589 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06589 ic: 0.9522 adc/gev: 0.0397978
+pedestal values:  G12: 202.803,1.3565  G6: 197.555,0.877863  G1: 202.77,0.700645
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=201 gainid=1
+sample=2 adc=201 gainid=1
+sample=3 adc=201 gainid=1
+sample=4 adc=201 gainid=1
+sample=5 adc=236 gainid=1
+sample=6 adc=248 gainid=1
+sample=7 adc=244 gainid=1
+sample=8 adc=234 gainid=1
+sample=9 adc=225 gainid=1
+sample=10 adc=219 gainid=1
+
+ieta,iphi=28 293 energy=2.88955 eta,phi=0.489789 -1.35284 et=2.57452 time=0.827638
+swisscross=-2.92396 lasercorr=1.07286 chi2=6.55118
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07286 ic: 0.84 adc/gev: 0.0397978
+pedestal values:  G12: 194.012,1.26992  G6: 197.769,0.865678  G1: 193.594,0.659818
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=194 gainid=1
+sample=2 adc=193 gainid=1
+sample=3 adc=193 gainid=1
+sample=4 adc=194 gainid=1
+sample=5 adc=252 gainid=1
+sample=6 adc=277 gainid=1
+sample=7 adc=269 gainid=1
+sample=8 adc=251 gainid=1
+sample=9 adc=235 gainid=1
+sample=10 adc=221 gainid=1
+
+ieta,iphi=28 294 energy=5.13527 eta,phi=0.490193 -1.33568 et=4.57456 time=0.255953
+swisscross=-2.42414 lasercorr=1.09889 chi2=2.51969
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.09889 ic: 0.8297 adc/gev: 0.0397978
+pedestal values:  G12: 199.097,1.31237  G6: 202.195,0.935135  G1: 216.489,0.597797
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=199 gainid=1
+sample=2 adc=199 gainid=1
+sample=3 adc=199 gainid=1
+sample=4 adc=200 gainid=1
+sample=5 adc=302 gainid=1
+sample=6 adc=341 gainid=1
+sample=7 adc=328 gainid=1
+sample=8 adc=299 gainid=1
+sample=9 adc=270 gainid=1
+sample=10 adc=248 gainid=1
+
+ieta,iphi=28 295 energy=5.2419 eta,phi=0.489801 -1.31833 et=4.67039 time=0.141426
+swisscross=-1.74244 lasercorr=1.08379 chi2=1.51181
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.08379 ic: 0.8917 adc/gev: 0.0397978
+pedestal values:  G12: 200.541,1.26739  G6: 188.63,0.816858  G1: 189.479,0.640936
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=201 gainid=1
+sample=2 adc=201 gainid=1
+sample=3 adc=202 gainid=1
+sample=4 adc=204 gainid=1
+sample=5 adc=305 gainid=1
+sample=6 adc=339 gainid=1
+sample=7 adc=324 gainid=1
+sample=8 adc=295 gainid=1
+sample=9 adc=268 gainid=1
+sample=10 adc=246 gainid=1
+
+ieta,iphi=28 296 energy=1.13853 eta,phi=0.490208 -1.30116 et=1.01421 time=-0.0297971
+swisscross=-4.95949 lasercorr=1.06895 chi2=4.0315
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06895 ic: 0.8884 adc/gev: 0.0397978
+pedestal values:  G12: 206.379,1.27842  G6: 192.604,0.808972  G1: 217.68,0.649279
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=28 305 energy=1.45566 eta,phi=0.489808 -1.14183 et=1.29695 time=-0.875401
+swisscross=0.451808 lasercorr=1.08959 chi2=1.00787
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.08959 ic: 1.0962 adc/gev: 0.0397978
+pedestal values:  G12: 206.046,1.34415  G6: 209.706,0.853367  G1: 205.38,0.620668
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=29 255 energy=1.78645 eta,phi=0.507027 -2.01645 et=1.57909 time=-7.07125
+swisscross=0.455953 lasercorr=1.1079 chi2=49.3858
+kWeird=0 kDiWeird=0 kOOT=1
+calibration values:  lasercalib: 1.1079 ic: 0.9477 adc/gev: 0.0397978
+pedestal values:  G12: 207.98,1.34036  G6: 198.801,0.846456  G1: 199.693,0.608861
+Rechit flags:
+ kGood=0
+ kPoorReco=0
+ kOutOfTime=1
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=29 293 energy=4.07115 eta,phi=0.507015 -1.35284 et=3.59862 time=0.329039
+swisscross=-0.462268 lasercorr=1.07471 chi2=3.02362
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.07471 ic: 0.7906 adc/gev: 0.0397978
+pedestal values:  G12: 208.427,1.2753  G6: 200.492,0.803975  G1: 206.816,0.591971
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=29 294 energy=2.38341 eta,phi=0.507431 -1.33567 et=2.10636 time=-0.703802
+swisscross=-5.3348 lasercorr=1.06798 chi2=2.01575
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06798 ic: 0.8195 adc/gev: 0.0397978
+pedestal values:  G12: 207.831,1.27309  G6: 205.805,0.846082  G1: 212.519,0.614692
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=29 295 energy=5.45389 eta,phi=0.507027 -1.31832 et=4.82084 time=-0.072846
+swisscross=-0.610081 lasercorr=1.03576 chi2=1.00787
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.03576 ic: 0.9904 adc/gev: 0.0397978
+pedestal values:  G12: 206.621,1.38323  G6: 209.688,0.836133  G1: 201.58,0.628389
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=32 249 energy=1.20475 eta,phi=0.558535 -2.11998 et=1.03851 time=2.10047
+swisscross=-0.285797 lasercorr=1.06961 chi2=3.52756
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.06961 ic: 1.0021 adc/gev: 0.0397978
+pedestal values:  G12: 210.344,1.29235  G6: 205.181,0.840509  G1: 203.306,0.640461
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=33 249 energy=1.27709 eta,phi=0.575649 -2.11997 et=1.09124 time=-0.071172
+swisscross=-0.443461 lasercorr=1.0624 chi2=5.03937
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.0624 ic: 0.9417 adc/gev: 0.0397978
+pedestal values:  G12: 193.951,1.35781  G6: 199.248,0.843567  G1: 207.761,0.574328
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ieta,iphi=45 72 energy=1.59745 eta,phi=0.781616 1.07337 et=1.20897 time=1.97503
+swisscross=0.763576 lasercorr=1.11851 chi2=6.04724
+kWeird=0 kDiWeird=0 kOOT=0
+calibration values:  lasercalib: 1.11851 ic: 1.0423 adc/gev: 0.0397978
+pedestal values:  G12: 201.773,1.34466  G6: 196.418,0.834419  G1: 193.244,0.548241
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+
+****EE HITS****
+
+ix,iy,iz=11 54 -1 eta,phi=-1.71726 3.05418 energy=5.37465 et=1.86982 time=-0.16005
+swisscross=0.234837 lasercorr=1.12997 chi2=8.56693
+calibration values:  lasercalib: 1.12997 ic: 0.8889 adc/gev: 0.06737
+pedestal values:  G12: 189.279,2.08957  G6: 205.142,1.27912  G1: 212.171,0.729675
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ix,iy,iz=37 50 1 eta,phi=2.77265 -3.10248 energy=10.0964 et=1.25706 time=2.43927
+swisscross=0.677694 lasercorr=4.70793 chi2=0
+calibration values:  lasercalib: 4.70793 ic: 1.4941 adc/gev: 0.06737
+pedestal values:  G12: 212.812,2.16797  G6: 220.359,1.25711  G1: 211.331,0.63647
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ix,iy,iz=60 58 1 eta,phi=2.88292 0.668383 energy=11.1399 et=1.24313 time=1.01206
+swisscross=0.0765657 lasercorr=2.98604 chi2=10.0787
+calibration values:  lasercalib: 2.98604 ic: 1.0532 adc/gev: 0.06737
+pedestal values:  G12: 211.791,2.90039  G6: 208.438,1.53776  G1: 193.17,0.73257
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ix,iy,iz=61 57 1 eta,phi=2.86077 0.552436 energy=10.4334 et=1.1902 time=-4.03831
+swisscross=-1.68411 lasercorr=3.72979 chi2=8.06299
+calibration values:  lasercalib: 3.72979 ic: 1.2022 adc/gev: 0.06737
+pedestal values:  G12: 199.165,2.00122  G6: 216.97,1.12088  G1: 222.564,0.722708
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=200 gainid=1
+sample=2 adc=199 gainid=1
+sample=3 adc=200 gainid=1
+sample=4 adc=213 gainid=1
+sample=5 adc=236 gainid=1
+sample=6 adc=239 gainid=1
+sample=7 adc=232 gainid=1
+sample=8 adc=222 gainid=1
+sample=9 adc=213 gainid=1
+sample=10 adc=208 gainid=1
+
+ix,iy,iz=62 57 1 eta,phi=2.79446 0.513431 energy=16.8089 et=2.048 time=-1.4974
+swisscross=-4.97887 lasercorr=3.29072 chi2=9.07087
+calibration values:  lasercalib: 3.29072 ic: 1.56 adc/gev: 0.06737
+pedestal values:  G12: 235.983,2.06985  G6: 245.73,1.12903  G1: 235.848,0.642931
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=239 gainid=1
+sample=2 adc=241 gainid=1
+sample=3 adc=241 gainid=1
+sample=4 adc=255 gainid=1
+sample=5 adc=285 gainid=1
+sample=6 adc=287 gainid=1
+sample=7 adc=277 gainid=1
+sample=8 adc=264 gainid=1
+sample=9 adc=256 gainid=1
+sample=10 adc=248 gainid=1
+
+ix,iy,iz=62 58 1 eta,phi=2.75672 0.575989 energy=84.2669 et=10.6589 time=0.0324311
+swisscross=0.430369 lasercorr=3.16812 chi2=12.5984
+calibration values:  lasercalib: 3.16812 ic: 2.4354 adc/gev: 0.06737
+pedestal values:  G12: 199.133,1.99357  G6: 212.571,1.10731  G1: 213.709,0.705731
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=204 gainid=1
+sample=2 adc=202 gainid=1
+sample=3 adc=199 gainid=1
+sample=4 adc=249 gainid=1
+sample=5 adc=349 gainid=1
+sample=6 adc=360 gainid=1
+sample=7 adc=333 gainid=1
+sample=8 adc=297 gainid=1
+sample=9 adc=268 gainid=1
+sample=10 adc=245 gainid=1
+
+ix,iy,iz=63 58 1 eta,phi=2.69765 0.539233 energy=17.029 et=2.28391 time=1.14593
+swisscross=-5.49927 lasercorr=3.10675 chi2=20.6614
+calibration values:  lasercalib: 3.10675 ic: 1.702 adc/gev: 0.06737
+pedestal values:  G12: 209.854,2.04123  G6: 218.024,1.14727  G1: 219.299,0.722134
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+DIGI found: 
+sample=1 adc=211 gainid=1
+sample=2 adc=215 gainid=1
+sample=3 adc=210 gainid=1
+sample=4 adc=223 gainid=1
+sample=5 adc=253 gainid=1
+sample=6 adc=259 gainid=1
+sample=7 adc=250 gainid=1
+sample=8 adc=243 gainid=1
+sample=9 adc=233 gainid=1
+sample=10 adc=223 gainid=1
+
+ix,iy,iz=64 57 1 eta,phi=2.67045 0.448881 energy=7.43578 et=1.02452 time=2.28978
+swisscross=-2.68437 lasercorr=2.57324 chi2=6.04724
+calibration values:  lasercalib: 2.57324 ic: 2.1958 adc/gev: 0.06737
+pedestal values:  G12: 205.352,2.18821  G6: 210.023,1.18116  G1: 203.234,0.88826
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+ix,iy,iz=64 58 1 eta,phi=2.64076 0.506493 energy=18.5524 et=2.63246 time=0.425104
+swisscross=-0.474037 lasercorr=3.17959 chi2=5.54331
+calibration values:  lasercalib: 3.17959 ic: 1.7288 adc/gev: 0.06737
+pedestal values:  G12: 205.58,2.11649  G6: 207.998,1.20948  G1: 203.67,0.77379
+Rechit flags:
+ kGood=1
+ kPoorReco=0
+ kOutOfTime=0
+ kFaultyHardware=0
+ kNoisy=0
+ kPoorCalib=0
+ kSaturated=0
+ kLeadingEdgeRecovered=0
+ kNeighboursRecovered=0
+ kTowerRecovered=0
+ kDead=0
+ kKilled=0
+ kTPSaturated=0
+ kL1SpikeFlag=0
+ kWeird=0
+ kDiWeird=0
+ kUnknown=0
+
+
+****ES HITS****
+EB sumet=1395.34 EB sumet (kGood)=1388.18
+EE sumet=36.2658 EE sumet (kGood)=36.2658
+ EE+ sumet=27.1326 EE- sumet=9.13325
+ES sumet=0.00106374 ES sumet (kGood)=0.00106374
+ ES+ sumet, plane 1=0.000168258 ES+ sumet, plane 2=0.000143961
+ ES- sumet, plane 1=0.000247999 ES- sumet, plane 2=0.000503526
+
+
+19-Apr-2017 16:48:35 CEST  Closed file file:/afs/cern.ch/work/p/pbarria/public/SingleEvent/CMSSW_8_3_0/src/JetMETCorrections/MCJet/pick1eventRUN274200.root
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 fileAction           -s file_close                             1        1
+    2 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 fileAction           PostEndRun                        
+    2 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+System                  3                   3
