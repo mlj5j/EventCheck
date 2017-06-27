@@ -1,0 +1,131 @@
+TEST4events.txt
+Found bad event!
+ieta,iphi=80 273 energy=3.01791 eta,phi=1.39098 -1.70169 et=1.41434 time=-7.46726
+
+pedestal values:  G12: 207.609,1.39448  G6: 195.261,0.840475  G1: 194.829,0.565248
+
+Found bad event!
+ieta,iphi=80 279 energy=82.0634 eta,phi=1.39108 -1.59814 et=38.4552 time=-0.488879
+
+pedestal values:  G12: 200.985,1.42294  G6: 193.412,0.894433  G1: 188.182,0.555685
+
+sample=1 adc=200 gainid=1
+
+sample=2 adc=201 gainid=1
+
+sample=3 adc=200 gainid=1
+
+sample=4 adc=233 gainid=1
+
+sample=5 adc=1746 gainid=1
+
+sample=6 adc=2208 gainid=1
+
+sample=7 adc=1984 gainid=1
+
+sample=8 adc=1564 gainid=1
+
+sample=9 adc=1173 gainid=1
+
+sample=10 adc=863 gainid=1
+
+Found bad event!
+ieta,iphi=80 280 energy=2336.24 eta,phi=1.39188 -1.58095 et=1093.99 time=-0.493168
+
+pedestal values:  G12: 192.766,1.41775  G6: 197.375,0.866305  G1: 215.804,0.575161
+
+sample=1 adc=194 gainid=1
+
+sample=2 adc=194 gainid=1
+
+sample=3 adc=194 gainid=1
+
+sample=4 adc=1669 gainid=1
+
+sample=5 adc=3889 gainid=3
+
+sample=6 adc=3967 gainid=0
+
+sample=7 adc=3967 gainid=0
+
+sample=8 adc=3967 gainid=0
+
+sample=9 adc=3967 gainid=0
+
+sample=10 adc=3967 gainid=0
+
+Found bad event!
+ieta,iphi=48 340 energy=2071.64 eta,phi=0.838368 -0.533877 et=1509.39 time=-1.47517
+
+pedestal values:  G12: 201.803,1.36635  G6: 201.799,0.849277  G1: 195.267,0.594465
+
+sample=1 adc=201 gainid=1
+
+sample=2 adc=201 gainid=1
+
+sample=3 adc=201 gainid=1
+
+sample=4 adc=1736 gainid=1
+
+sample=5 adc=3933 gainid=3
+
+sample=6 adc=3968 gainid=0
+
+sample=7 adc=3968 gainid=0
+
+sample=8 adc=3968 gainid=0
+
+sample=9 adc=3968 gainid=0
+
+sample=10 adc=3968 gainid=0
+
+Found bad event!
+ieta,iphi=61 22 energy=6.64088 eta,phi=1.06109 0.202739 et=4.10489 time=0.793776
+
+pedestal values:  G12: 199.207,1.42393  G6: 206.061,0.883905  G1: 194.353,0.683289
+
+Found bad event!
+ieta,iphi=-43 55 energy=2068.98 eta,phi=-0.747395 0.775289 et=1600.7 time=-0.934168
+
+pedestal values:  G12: 204.412,1.30783  G6: 205.604,0.815271  G1: 208.211,0.614875
+
+sample=1 adc=204 gainid=1
+
+sample=2 adc=204 gainid=1
+
+sample=3 adc=207 gainid=1
+
+sample=4 adc=1444 gainid=1
+
+sample=5 adc=3811 gainid=3
+
+sample=6 adc=4094 gainid=0
+
+sample=7 adc=4094 gainid=0
+
+sample=8 adc=4094 gainid=0
+
+sample=9 adc=4094 gainid=0
+
+sample=10 adc=4094 gainid=0
+
+Found bad event!
+ieta,iphi=12 64 energy=2.14456 eta,phi=0.207953 0.935107 et=2.09901 time=-8.23824
+
+pedestal values:  G12: 203.574,1.32608  G6: 201.213,0.846898  G1: 210.926,0.656993
+
+Found bad event!
+ieta,iphi=15 66 energy=1.62792 eta,phi=0.259971 0.969639 et=1.57442 time=-8.63388
+
+pedestal values:  G12: 212.83,1.30886  G6: 211.637,0.806238  G1: 201.457,0.683065
+
+Found bad event!
+ieta,iphi=17 270 energy=1.05181 eta,phi=0.294705 -1.75384 et=1.00773 time=-14.3925
+
+pedestal values:  G12: 191.811,1.32917  G6: 209.758,0.891555  G1: 213.582,0.620714
+
+Found bad event!
+ieta,iphi=29 255 energy=1.78645 eta,phi=0.507027 -2.01645 et=1.57909 time=-7.07125
+
+pedestal values:  G12: 207.98,1.34036  G6: 198.801,0.846456  G1: 199.693,0.608861
+
