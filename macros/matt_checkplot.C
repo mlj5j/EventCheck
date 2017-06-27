@@ -4,12 +4,12 @@
   TFile f1("exomgg_0t_runC.root");
 
   //Specify the number of events to plot
-  int N = 2;
+  const int N = 2;
 
   gStyle->SetOptStat(0);
   //Setting coordinates for the cluster seeds
-  int etamax[4] = {-43, 80, 48, 12};
-  int phimax[4] = {50, 273, 340, 64};
+  int etamax[N] = {48, -43};
+  int phimax[N] = {340, 55};
 
 
   // read histograms from file
@@ -222,8 +222,8 @@
   char txt[30];
 
   for (int k=0; k<N; k++) {
-      eboccet->GetXaxis()->SetRangeUser(phimax[k]-8,phimax[k]+8);
-      eboccet->GetYaxis()->SetRangeUser(etamax[k]-8,etamax[k]+8);
+      eboccet->GetXaxis()->SetRangeUser(phimax[k]-6,phimax[k]+4);
+      eboccet->GetYaxis()->SetRangeUser(etamax[k]-5,etamax[k]+5);
       eboccet->Draw("colz,text");
       t1.DrawLatex(0.83,0.875,"E_{T} [GeV]");
       sprintf(txt,"plots/transverse_energy_zoom_%d.png",k+1);
@@ -258,8 +258,8 @@
   ebtime->SetMaximum(3);
 
   for (int k=0; k<N; k++)  {
-      ebtime->GetXaxis()->SetRangeUser(phimax[k]-8,phimax[k]+8);
-      ebtime->GetYaxis()->SetRangeUser(etamax[k]-8,etamax[k]+8);
+      ebtime->GetXaxis()->SetRangeUser(phimax[k]-6,phimax[k]+4);
+      ebtime->GetYaxis()->SetRangeUser(etamax[k]-5,etamax[k]+5);
       ebtime->Draw("colz,text");
       t1.DrawLatex(0.83,0.875,"Time [ns]");
       sprintf(txt,"plots/EB_rechit_time_zoomed_%d.png",k+1);
@@ -280,8 +280,8 @@
   ebicval->SetMaximum(3);
 
   for (int k=0; k<N; k++) {
-      ebicval->GetXaxis()->SetRangeUser(phimax[k]-8,phimax[k]+8);
-      ebicval->GetYaxis()->SetRangeUser(etamax[k]-8,etamax[k]+8);
+      ebicval->GetXaxis()->SetRangeUser(phimax[k]-6,phimax[k]+4);
+      ebicval->GetYaxis()->SetRangeUser(etamax[k]-5,etamax[k]+5);
       ebicval->Draw("colz,text");
       t1.DrawLatex(0.83,0.875,"IC");
       sprintf(txt,"plots/EB_intercalib_map_zoomed_%d.png",k+1);
@@ -303,8 +303,8 @@
   eblascorr->SetMaximum(3);
 
   for (int k=0; k<N; k++) {
-      eblascorr->GetXaxis()->SetRangeUser(phimax[k]-8,phimax[k]+8);
-      eblascorr->GetYaxis()->SetRangeUser(etamax[k]-8,etamax[k]+8);
+      eblascorr->GetXaxis()->SetRangeUser(phimax[k]-6,phimax[k]+4);
+      eblascorr->GetYaxis()->SetRangeUser(etamax[k]-5,etamax[k]+5);
       eblascorr->Draw("colz,text");
       t1.DrawLatex(0.83,0.875,"Las. corr.");
       sprintf(txt,"plots/Las_corr_zoomed_%d.png",k+1);
