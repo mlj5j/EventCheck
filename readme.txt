@@ -25,8 +25,6 @@ cp /afs/cern.ch/user/p/petyt/public/EventCheck/code/datacheck_cfg.py  test/
 2) TO RUN CODE:
 --------------
 
-nice cmsRun test/datacheck_cfg.py
-
 
 
 
