@@ -1,12 +1,15 @@
 {
 
+
   TFile f1("exomgg_0t_runC.root");
 
+  //Specify the number of events to plot
+  const int N = 2;
 
-  // input coordinates of cluster seed (for zoomed view)
-  int etamax=80;
-  int phimax=273;
-
+  gStyle->SetOptStat(0);
+  //Setting coordinates for the cluster seeds
+  int etamax[N] = {48, -43};
+  int phimax[N] = {340, 55};
 
 
   // read histograms from file
@@ -65,7 +68,7 @@
   
   for (Int_t j=0;j<170;j++) {
 
-    for (Int_t i=0;i<360;i++) {
+    for (Int_t i=0;i<180;i++) {  //changed 360 to 180
 
       Float_t tmp=eb->GetBinContent(i+1,j+1);
       Float_t tmp2=eboccet->GetBinContent(i+1,j+1);
@@ -162,7 +165,7 @@
   t1.SetTextSize(0.05);
   t1.DrawLatex(0.90,0.86,"E_{T} [GeV]");
 
-  c1.SaveAs("exomgg_0t_rereco_ev3_ebet_photon2.png");
+  c1.SaveAs("plots/exomgg_0t_rereco_ev3_ebet_photon2.png");
 
 
   TCanvas c2("c2","",10,10,1200,600);
@@ -194,7 +197,7 @@
   t1.DrawLatex(0.17,0.8,"EE-");
   t1.DrawLatex(0.8,0.8,"EE+");
 
-  c2.SaveAs("exomgg_0t_rereco_ev3_eeet_photon2.png");
+  c2.SaveAs("plots/exomgg_0t_rereco_ev3_eeet_photon2.png");
 
 
 
@@ -208,18 +211,30 @@
   c3.SetLogz(1);
   gStyle->SetPaintTextFormat("2.1f");
 
+//  char txt[30];
+//  for(int k=0; k<4; k++)  {
+
  
   eboccet->SetMarkerSize(1.2);
   eboccet->GetXaxis()->SetNdivisions(11);
   eboccet->GetYaxis()->SetNdivisions(11);
  
-  eboccet->GetXaxis()->SetRangeUser(phimax-10,phimax+10);
-  eboccet->GetYaxis()->SetRangeUser(etamax-10,etamax+10);
+  char txt[30];
 
-  eboccet->Draw("colz,text");
-  t1.DrawLatex(0.83,0.875,"E_{T} [GeV]");
-
-  c3.SaveAs("exomgg_0t_rereco_ev3_ebet_zoom_photon2.png");
+  for (int k=0; k<N; k++) {
+      eboccet->GetXaxis()->SetRangeUser(phimax[k]-6,phimax[k]+4);
+      eboccet->GetYaxis()->SetRangeUser(etamax[k]-5,etamax[k]+5);
+      eboccet->Draw("colz,text");
+      t1.DrawLatex(0.83,0.875,"E_{T} [GeV]");
+      TBox *b = new TBox(phimax[k]-1,etamax[k]-1,phimax[k],etamax[k]);
+      b->SetFillStyle(0);
+      b->SetLineColor(1);
+      b->SetLineWidth(7);
+      b->SetLineStyle(1);
+      b->Draw();
+      sprintf(txt,"plots/transverse_energy_zoom_%d.png",k+1);
+      c3.SaveAs(txt);
+  }
 
 
 
@@ -248,14 +263,20 @@
   ebtime->SetMinimum(-3);
   ebtime->SetMaximum(3);
 
-  ebtime->GetXaxis()->SetRangeUser(phimax-10,phimax+10);
-  ebtime->GetYaxis()->SetRangeUser(etamax-10,etamax+10);
-
-  ebtime->Draw("colz,text");
-  t1.DrawLatex(0.83,0.875,"Time [ns]");
-
-
-  c4.SaveAs("exomgg_0t_rereco_ev3_ebtime_zoom_photon2.png");
+  for (int k=0; k<N; k++)  {
+      ebtime->GetXaxis()->SetRangeUser(phimax[k]-6,phimax[k]+4);
+      ebtime->GetYaxis()->SetRangeUser(etamax[k]-5,etamax[k]+5);
+      ebtime->Draw("colz,text");
+      t1.DrawLatex(0.83,0.875,"Time [ns]");
+      TBox *b = new TBox(phimax[k]-1,etamax[k]-1,phimax[k],etamax[k]);
+      b->SetFillStyle(0);
+      b->SetLineColor(1);
+      b->SetLineWidth(7);
+      b->SetLineStyle(1);
+      b->Draw();
+      sprintf(txt,"plots/EB_rechit_time_zoomed_%d.png",k+1);
+      c4.SaveAs(txt);
+  }
 
 
   // EB intercalibration map (zoomed)
@@ -270,14 +291,20 @@
   ebicval->SetMinimum(0);
   ebicval->SetMaximum(3);
 
-  ebicval->GetXaxis()->SetRangeUser(phimax-6,phimax+4);
-  ebicval->GetYaxis()->SetRangeUser(etamax-5,etamax+5);
-
-  ebicval->Draw("colz,text");
-  t1.DrawLatex(0.83,0.875,"IC");
-
-
-  c4.SaveAs("exomgg_0t_rereco_ev3_ebicval_zoom_photon2.png");
+  for (int k=0; k<N; k++) {
+      ebicval->GetXaxis()->SetRangeUser(phimax[k]-6,phimax[k]+4);
+      ebicval->GetYaxis()->SetRangeUser(etamax[k]-5,etamax[k]+5);
+      ebicval->Draw("colz,text");
+      t1.DrawLatex(0.83,0.875,"IC");
+      TBox *b = new TBox(phimax[k]-1,etamax[k]-1,phimax[k],etamax[k]);
+      b->SetFillStyle(0);
+      b->SetLineColor(1);
+      b->SetLineWidth(7);
+      b->SetLineStyle(1);
+      b->Draw();
+      sprintf(txt,"plots/EB_intercalib_map_zoomed_%d.png",k+1);
+      c4.SaveAs(txt);
+  }
 
 
 
@@ -293,15 +320,30 @@
   eblascorr->SetMinimum(0);
   eblascorr->SetMaximum(3);
 
-  eblascorr->GetXaxis()->SetRangeUser(phimax-10,phimax+10);
-  eblascorr->GetYaxis()->SetRangeUser(etamax-10,etamax+10);
+  for (int k=0; k<N; k++) {
+      eblascorr->GetXaxis()->SetRangeUser(phimax[k]-6,phimax[k]+4);
+      eblascorr->GetYaxis()->SetRangeUser(etamax[k]-5,etamax[k]+5);
+      eblascorr->Draw("colz,text");
+      t1.DrawLatex(0.83,0.875,"Las. corr.");
+      TBox *b = new TBox(phimax[k]-1,etamax[k]-1,phimax[k],etamax[k]);
+      b->SetFillStyle(0);
+      b->SetLineColor(1);
+      b->SetLineWidth(7);
+      b->SetLineStyle(1);
+      b->Draw();
+      sprintf(txt,"plots/Las_corr_zoomed_%d.png",k+1);
+      c4.SaveAs(txt);
+  }
+  /*
+  eblascorr->GetXaxis()->SetRangeUser(phimax-5,phimax+6);
+  eblascorr->GetYaxis()->SetRangeUser(etamax-5,etamax+6);
 
   eblascorr->Draw("colz,text");
   t1.DrawLatex(0.83,0.875,"Las. corr.");
 
 
   c4.SaveAs("exomgg_0t_rereco_ev3_eblascorr_zoom_photon2.png");
-
+*/
 
   // EB laser correction map (all channels)
   
@@ -320,7 +362,7 @@
   t1.SetTextSize(0.05);
   t1.DrawLatex(0.88,0.91,"Las. Corr.");
 
-  c1.SaveAs("exomgg_0t_rereco_ev3_eblascorr_all_photon2.png");
+  c1.SaveAs("plots/exomgg_0t_rereco_ev3_eblascorr_all_photon2.png");
 
 
 
@@ -340,7 +382,7 @@
   t1.SetTextSize(0.05);
   t1.DrawLatex(0.88,0.91,"Las. Corr.");
 
-  c1.SaveAs("exomgg_0t_rereco_ev3_eblascorr_good_photon2.png");
+  c1.SaveAs("plots/exomgg_0t_rereco_ev3_eblascorr_good_photon2.png");
 
 
   
@@ -354,13 +396,12 @@
   eblascorrall_1d->SetXTitle("Laser correction");
   eblascorrall_1d->Draw();
 
-  c4.SaveAs("exomgg_0t_rereco_ev3_eblascorr1d_all_photon2.png");
+  c4.SaveAs("plots/exomgg_0t_rereco_ev3_eblascorr1d_all_photon2.png");
 
   eblascorrgood_1d->SetLineColor(1);
   eblascorrgood_1d->SetXTitle("Laser correction");
   eblascorrgood_1d->Draw();
 
-  c4.SaveAs("exomgg_0t_rereco_ev3_eblascorr1d_good_photon2.png");
-
+  c4.SaveAs("plots/exomgg_0t_rereco_ev3_eblascorr1d_good_photon2.png");
   
 }
