@@ -4,12 +4,12 @@
   TFile f1("exomgg_0t_runC.root");
 
   //Specify the number of events to plot
-  const int N = 2;
+  const int N = 1;
 
   gStyle->SetOptStat(0);
   //Setting coordinates for the cluster seeds
-  int etamax[N] = {48, -43};
-  int phimax[N] = {340, 55};
+  int etamax[N] = {80};
+  int phimax[N] = {279};
 
 
   // read histograms from file
@@ -18,6 +18,7 @@
   
   TH2F *eboccet=(TH2F*)f1.Get("eboccet");
   TH2F *eeoccet=(TH2F*)f1.Get("eeoccet");
+  TH2F *esoccet_esm1=(TH2F*)f1.Get("esoccet_esm1");  //Matt Joyce
 
   // rechit time maps
   
@@ -190,6 +191,7 @@
   eemask->Draw("box,same");
   eemask2->Draw("box,same");
   eeoccet->Draw("colz,same");
+  
 
   l1.Draw();
   t1.SetTextSize(0.05);
@@ -198,6 +200,28 @@
   t1.DrawLatex(0.8,0.8,"EE+");
 
   c2.SaveAs("plots/exomgg_0t_rereco_ev3_eeet_photon2.png");
+
+  TCanvas c5("c5","",10,10,1200,600);
+  c5.cd();
+  c5.SetLogz(1);
+  c5.SetGridx();
+  c5.SetGridy();
+
+  esoccet_esp1->GetXaxis()->SetLabelSize(0);
+  esoccet_esp1->GetYaxis()->SetLabelSize(0);
+  esoccet_esp1->SetXTitle("ix");
+  esoccet_esp1->SetYTitle("iy");
+  TLine l5(100,0,100,100);
+  esoccet_esp1->GetXaxis()->SetNdivisions(40);
+  esoccet_esp1->GetYaxis()->SetNdivisions(20);
+  esoccet_esp1->Draw("colz");
+  eemask->Draw("box,same");
+  eemask2->Draw("box,same");
+  esoccet_esp1->Draw("colz,same");
+
+  l5.Draw();
+
+  c5.SaveAs("plots/exomgg_0t_rereco_ev3_eset_photon2.png");
 
 
 

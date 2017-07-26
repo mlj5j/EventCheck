@@ -169,6 +169,8 @@ class EventAnalyser : public edm::EDAnalyzer
   edm::EDGetTokenT<EBDigiCollection> tok_EB_digi;
   edm::EDGetTokenT<EEDigiCollection> tok_EE_digi;
 
+  edm::EDGetTokenT<reco::GsfElectronCollection> tok_elec;
+
 
 
 };
