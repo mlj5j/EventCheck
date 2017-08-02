@@ -52,9 +52,6 @@
 #include "DataFormats/L1GlobalTrigger/interface/L1GtTechnicalTriggerRecord.h"
 #include "DataFormats/L1GlobalTrigger/interface/L1GtTechnicalTrigger.h"
 
-#include "DataFormats/EgammaCandidates/interface/GsfElectron.h"
-#include "DataFormats/EgammaCandidates/interface/GsfElectronFwd.h"
-
 #include "Geometry/Records/interface/IdealGeometryRecord.h"
 #include "SimDataFormats/GeneratorProducts/interface/GenEventInfoProduct.h"
 #include "DataFormats/JetReco/interface/PFJet.h"
@@ -118,6 +115,13 @@
 //#include "RecoEcal/EgammaCoreTools/interface/EcalClusterTools.h"
 #include "RecoEcal/EgammaCoreTools/interface/EcalTools.h"
 
+//#########################Added by Matt Joyce########################################
+
+#include "DataFormats/EgammaCandidates/interface/GsfElectron.h"
+#include "DataFormats/EgammaCandidates/interface/GsfElectronFwd.h"
+
+//####################################################################################
+
 #include "Math/VectorUtil.h"
 #include "TVector3.h"
 
@@ -141,42 +145,15 @@ EventAnalyser::EventAnalyser(const edm::ParameterSet& cfg)
 
 
 
-  //  tok_EB=consumes<EcalRecHitCollection>(edm::InputTag("ecalRecHit","EcalRecHitsEB"));
-  //  tok_EE=consumes<EcalRecHitCollection>(edm::InputTag("ecalRecHit","EcalRecHitsEE"));
 
-
-  
   tok_EB=consumes<EcalRecHitCollection>(edm::InputTag("reducedEcalRecHitsEB"));
   tok_EE=consumes<EcalRecHitCollection>(edm::InputTag("reducedEcalRecHitsEE"));
   tok_ES=consumes<EcalRecHitCollection>(edm::InputTag("reducedEcalRecHitsES"));
 
   tok_EB_digi=consumes<EBDigiCollection>(edm::InputTag("selectDigi","selectedEcalEBDigiCollection")); 
   tok_EE_digi=consumes<EEDigiCollection>(edm::InputTag("selectDigi","selectedEcalEEDigiCollection"));
-  
 
 
-  //MINIAOD
-
-  /*
-  tok_EB=consumes<EcalRecHitCollection>(edm::InputTag("reducedEgamma","reducedEBRecHits"));
-  tok_EE=consumes<EcalRecHitCollection>(edm::InputTag("reducedEgamma","reducedEERecHits"));
-  tok_ES=consumes<EcalRecHitCollection>(edm::InputTag("reducedEgamma","reducedESRecHits"));
-
-
-  tok_EB_digi=consumes<EBDigiCollection>(edm::InputTag("selectDigi","selectedEcalEBDigiCollection")); 
-  tok_EE_digi=consumes<EEDigiCollection>(edm::InputTag("selectDigi","selectedEcalEEDigiCollection"));
-  */
-
-
-
-  // supercluster collections
-
-  //  tok_EB_sc=consumes<reco::SuperClusterCollection>(edm::InputTag("particleFlowSuperClusterECAL","particleFlowSuperClusterECALBarrel"));
-
-  //  tok_EE_sc=consumes<reco::SuperClusterCollection>(edm::InputTag("particleFlowSuperClusterECAL","particleFlowSuperClusterECALEndcapWithPreshower"));
-
-   tok_elec=consumes<reco::GsfElectronCollection>(edm::InputTag("gedGsfElectrons"));
-   //   tok_elec=consumes<reco::GsfElectronCollection>(edm::InputTag("gedGsfElectrons"));
 
 
   edm::ParameterSet cleaningPs = 
@@ -191,12 +168,13 @@ EventAnalyser::EventAnalyser(const edm::ParameterSet& cfg)
 //////////////////////////////////////////////////////////////////////////////////////////
 void EventAnalyser::beginJob() 
 {
-
+//Creating the ouput file and the TTree
   file_          = new TFile(histogramFile_.c_str(),"RECREATE");
   dataTree_      = new TTree("dataTree","dataTree");
 
   evcount=0;
 
+//Making arrays for the calibrated and uncalibrated rechits(?) histograms for barrel and endcaps
   barrel_uncalibrh=new TH2F*[100];
   endcap_uncalibrh=new TH2F*[100];
   barrel_rh=new TH2F*[100];
@@ -206,7 +184,7 @@ void EventAnalyser::beginJob()
   char txt[80];
 
   for (Int_t i=0;i<100;i++) {
-
+//Initializing the histograms for each array element
     sprintf(txt,"barrel_uncalibrh_ev%03d",i+1);
     barrel_uncalibrh[i] = new TH2F(txt,txt,360,0,360,170,-85,85);
 
@@ -221,7 +199,7 @@ void EventAnalyser::beginJob()
     
   }
 
-
+//Initializing all of the other histograms
   eboccet = new TH2F("eboccet","",360,0,360,170,-85,85);
   ebtime = new TH2F("ebtime","",360,0,360,170,-85,85);
 
@@ -287,7 +265,7 @@ void EventAnalyser::beginJob()
 
 
  // run/event info
-  
+ // Setting the branch addresses
   dataTree_->Branch("run",          &run,          "run/I");  
   dataTree_->Branch("ev",           &ev,    	   "ev/I");
   dataTree_->Branch("lumi",         &lumi,     	   "lumi/I");
@@ -474,8 +452,6 @@ float EventAnalyser::recHitE( const DetId id,
 void EventAnalyser::analyze(edm::Event const& event, edm::EventSetup const& iSetup) 
 { 
 
-  //  cout << "Starting EventAnalyser::analyze" << endl;
-
 
  for (int i=0;i<10;i++) {
 
@@ -505,10 +481,10 @@ void EventAnalyser::analyze(edm::Event const& event, edm::EventSetup const& iSet
 
 
 
-
-  //    if (run==274422 && ev==3627267894) {
- 
   cout << "RUN=" << run << " EVENT=" << ev << " lumi=" << lumi << endl;
+
+  //   if (run==258440 && ev==108011587) {
+ 
 
 
 
@@ -594,203 +570,92 @@ void EventAnalyser::analyze(edm::Event const& event, edm::EventSetup const& iSet
   edm::Handle<EcalRecHitCollection> EEhits;
   edm::Handle<ESRecHitCollection> EShits;
 
-  event.getByToken(tok_EB,EBhits);
-  event.getByToken(tok_EE,EEhits);
-  event.getByToken(tok_ES,EShits);
+  // AOD
+   event.getByToken(tok_EB,EBhits);
+   event.getByToken(tok_EE,EEhits);
+   event.getByToken(tok_ES,EShits);
  
- 
- 
-
-
-  // Digi collection
-
-
-  edm::Handle<EBDigiCollection>  EBdigis;
-  event.getByToken(tok_EB_digi,EBdigis);
-  
-  
-  
-  edm::Handle<EEDigiCollection>  EEdigis;
-  event.getByToken(tok_EE_digi,EEdigis);
-  
-  /*
-
-  // Supercluster collection
-
-  edm::Handle<reco::SuperClusterCollection> EBsupercluster;
-  event.getByToken(tok_EB_sc,EBsupercluster);
-
-  edm::Handle<reco::SuperClusterCollection> EEsupercluster;
-  event.getByToken(tok_EE_sc,EEsupercluster);
-
-  */
-
-  // electron collection
-
-
-  
-  edm::Handle<reco::GsfElectronCollection> EBelec;
-  event.getByToken(tok_elec,EBelec);
-
-
-  for (reco::GsfElectronCollection::const_iterator gsfIter=EBelec->begin();
-      gsfIter!=EBelec->end(); gsfIter++){
-
-    // int iseb=gsfIter->isEB();
-    // int isee=gsfIter->isEE();
-
-    float elec_eta=gsfIter->eta();
-    float elec_phi=gsfIter->phi();
-    float elec_pt=gsfIter->pt();
-    float elec_et=gsfIter->superCluster()->energy()/cosh( gsfIter->superCluster()->eta());
-
-    cout << "\nElec eta,phi=" << elec_eta << " " << elec_phi << endl;
-    cout << "  elec pt,et=" << elec_pt << " " << elec_et << endl;
+  // RECO
+  // event.getByLabel("ecalRecHit","EcalRecHitsEB",EBhits);
+  // event.getByLabel("ecalRecHit","EcalRecHitsEE",EEhits);
  
 
+   edm:: Handle<EBDigiCollection>  EBdigis;
+   event.getByToken(tok_EB_digi,EBdigis);
 
-    float elec_ptvtx= gsfIter->trackMomentumAtVtx().R();
-    float elec_ptout= gsfIter->trackMomentumOut().R();  
-    cout << "  elec ptvtx,ptout=" << elec_ptvtx << " " << elec_ptout << endl; 
-
-    float elec_eoverp=gsfIter->eSuperClusterOverP();
-    cout << "  elec eSC/p=" << elec_eoverp << endl; 
-
-
-  }
-
+     // event.getByLabel("ecalDigis","ebDigis",EBdigis);
+  
+   edm::Handle<EEDigiCollection>  EEdigis;
+   event.getByToken(tok_EE_digi,EEdigis);
+      //event.getByLabel("ecalDigis","eeDigis",EEdigis);
   
 
+ 
+      //  Handle<EcalUncalibratedRecHitCollection> EBhitsU_multi10;
+      //  Handle<EcalUncalibratedRecHitCollection> EEhitsU_multi10;
 
-  /*
+      //  event.getByLabel(edm::InputTag("ecalMultiFitUncalibRecHit","EcalUncalibRecHitsEB","reRECO"),EBhitsU_multi10);
+      // event.getByLabel(edm::InputTag("ecalMultiFitUncalibRecHit","EcalUncalibRecHitsEE","reRECO"),EEhitsU_multi10);
 
-  // supercluster loop   1: EB
+      /*
 
-  for (reco::SuperClusterCollection::const_iterator SC_iter_EB = EBsupercluster->begin();
-       SC_iter_EB != EBsupercluster->end();
-       SC_iter_EB++) {
-
-    float scenergy=SC_iter_EB->energy();
-    float sceta=SC_iter_EB->eta();
-    float scphi=SC_iter_EB->phi();
-    float scet=scenergy/cosh(sceta);
+    for (EcalUncalibratedRecHitCollection::const_iterator hitItr6 = EBhitsU_multi10->begin(); hitItr6 != EBhitsU_multi10->end(); ++hitItr6) {
 
 
 
-    cout << "\n\nEB SC energy, eta, phi, et= " << scenergy 
-    	 << " " << sceta << " " << scphi << " " << scet << "\n" << endl;
+	EcalUncalibratedRecHit hit6           = (*hitItr6);
+	EBDetId det6              = hit6.id(); 
 
-    // find set of det ids of rechits in this superculster
-
-
-    const std::vector<std::pair<DetId,float>> & schitseb=SC_iter_EB->hitsAndFractions();
-    for (std::vector<std::pair<DetId,float>>::const_iterator schitEB_it = schitseb.begin(); schitEB_it != schitseb.end(); schitEB_it++) {
-
-
-      // find rechits corresponding to these detids
-
-      for (EcalRecHitCollection::const_iterator hitItr = EBhits->begin(); hitItr != EBhits->end(); ++hitItr) {
-
-	if (schitEB_it->first == (*hitItr).id()) {
-
-	  // get some simple rechit-based quantities
-
-	    EcalRecHit EBhit=(*hitItr);
+	Float_t ucrechit_ampl_eb     = hit6.amplitude();
    
-	    EBDetId EBdet    = EBhit.id(); 
-	    int rechit_ieta    = EBdet.ieta();      
-	    int rechit_iphi    = EBdet.iphi();
-	    float rechit_ene     = EBhit.energy();
-	    float rechit_time    = EBhit.time();
+	int rechit_ieta    = det6.ieta();      
+	int rechit_iphi    = det6.iphi();
 
-	    	    
-	    
-	    cout << "   EB rechit:  ieta= " << rechit_ieta
-		 << " iphi=" << rechit_iphi
-		 << " energy=" << rechit_ene
-		 << " time=" << rechit_time
-		 << endl;
 
+	cout << "UCRECHIT, eta,phi,ampl=" << rechit_ieta << ":" 
+	     << rechit_iphi << ":" << ucrechit_ampl_eb << endl;
+
+	if (evcount<100) {
+
+	  barrel_uncalibrh[evcount]->Fill(rechit_iphi-0.5,rechit_ieta+0.5-1*(rechit_ieta>0),ucrechit_ampl_eb);
+ 
 	}
-      }
+
     }
-  }
 
 
 
 
+    for (EcalUncalibratedRecHitCollection::const_iterator hitItr6 = EEhitsU_multi10->begin(); hitItr6 != EEhitsU_multi10->end(); ++hitItr6) {
+
+	//	cout << "in EE loop4" << endl;
+
+	EcalUncalibratedRecHit hit6           = (*hitItr6);
+	EEDetId det6              = hit6.id(); 
 
 
+	Float_t ucrechit_ampl_ee     = hit6.amplitude();
+	int rechit_ix      = det6.ix();      
+	int rechit_iy      = det6.iy();
+	int rechit_iz      = det6.zside();
 
- // supercluster loop   2: EE
+ 
+	if (evcount<100) {
+	  endcap_uncalibrh[evcount]->Fill(rechit_ix-0.5+100*(rechit_iz>0),rechit_iy-0.5,ucrechit_ampl_ee);
+	  
+	}   
 
-  for (reco::SuperClusterCollection::const_iterator SC_iter_EE = EEsupercluster->begin();
-       SC_iter_EE != EEsupercluster->end();
-       SC_iter_EE++) {
-
-    float scenergy=SC_iter_EE->energy();
-    float sceta=SC_iter_EE->eta();
-    float scphi=SC_iter_EE->phi();
-    float scet=scenergy/cosh(sceta);
-
-    cout << "\n\nEE SC energy, eta, phi, et= " << scenergy 
-   	 << " " << sceta << " " << scphi << " " << scet << "\n" << endl;
-
-
-    // find set of det ids of rechits in this superculster
-
-    const std::vector<std::pair<DetId,float>> & schitsee=SC_iter_EE->hitsAndFractions();
-    for (std::vector<std::pair<DetId,float>>::const_iterator schitEE_it = schitsee.begin(); schitEE_it != schitsee.end(); schitEE_it++) {
-
-
-      // find rechits corresponding to these detids
-
-      for (EcalRecHitCollection::const_iterator hitItr = EEhits->begin(); hitItr != EEhits->end(); ++hitItr) {
-
-	if (schitEE_it->first == (*hitItr).id()) {
-
-	  // get some simple rechit-based quantities
-
-	    EcalRecHit EEhit=(*hitItr);
-   
-	    EEDetId EEdet    = EEhit.id(); 
-	    int rechit_ix        = EEdet.ix();      
-	    int rechit_iy        = EEdet.iy();
-	    int rechit_iz        = EEdet.zside();
-
-	    float rechit_ene       = EEhit.energy();
-	    float rechit_time      = EEhit.time();
-	    
-	    
-	    cout << "   EE rechit:  ix= " << rechit_ix
-	      << " iy=" << rechit_iy
-	      << " iz=" << rechit_iz
-	      << " energy=" << rechit_ene
-	      << " time=" << rechit_time
-	      << endl;
-
-	}
-      }
     }
-  }
 
-
-
-  */
-
-
-
-
-
-
+      */
 
 
    
-  float db_pedg12=0, db_pedg6=0, db_pedg1=0;
-  float db_pedrmsg12=0, db_pedrmsg6=0, db_pedrmsg1=0;
+    float db_pedg12=0, db_pedg6=0, db_pedg1=0;
+    float db_pedrmsg12=0, db_pedrmsg6=0, db_pedrmsg1=0;
 
-  for (Int_t i=0;i<360;i++) {
-    for (Int_t j=0;j<170;j++) {
+   for (Int_t i=0;i<360;i++) {
+     for (Int_t j=0;j<170;j++) {
 
        int iphitmp=i+1;
        int ietatmp=j-85+1*(j>84);
@@ -1409,7 +1274,32 @@ void EventAnalyser::analyze(edm::Event const& event, edm::EventSetup const& iSet
     }
   }
   
+//################################Added by Matte Joyce##################################
+//eletron stuff
 
+   edm::Handle<reco::GsfElectronCollection> EBelec;
+   event.getByToken(tok_elec,EBelec);
+
+   for (reco::GsfElectronCollection::const_iterator gsfIter=EBelec->begin(); gsfIter!=EBelec->end(); gsfIter++)
+   {
+       float elec_eta=gsfIter->eta();
+       float elec_phi=gsfIter->phi();
+       float elec_pt=gsfIter->pt();
+       float elec_et=gsfIter->superCluster()->energy()/cosh(gsfIter->superCluster()->eta());
+
+       cout << "\nelec eta,phi=" << elec_eta << " " << elec_phi << endl;
+       cout << " elec pt,et=" << elec_pt << " " << elec_et << endl;
+
+       float elec_ptvtx = gsfIter->trackMomentumAtVtx().R();
+       float elec_ptout = gsfIter->trackMomentumOut().R();
+       cout << " elec ptvtx,ptout=" << elec_ptvtx << " " << elec_ptout << endl;
+
+       float elec_eoverp = fsfIter->eSuperClusterOverP();
+       cout << " elec eSC/p=" << elec_eoverp << endl;
+
+   }
+
+//#########################################################################################
 
 
 
@@ -1549,7 +1439,7 @@ void EventAnalyser::analyze(edm::Event const& event, edm::EventSetup const& iSet
   
 
 
-  //  }
+  //   }
   
   evcount++;  
 
@@ -1561,4 +1451,3 @@ EventAnalyser::~EventAnalyser()
   delete dataTree_;
 }
 //}
-

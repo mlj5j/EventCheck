@@ -35,7 +35,8 @@ process.EcalLaserCorrectionService = cms.ESProducer("EcalLaserCorrectionService"
 #process.GlobalTag.globaltag = '74X_dataRun2_EcalCalib_v1'
 #process.GlobalTag.globaltag = '76X_dataRun2_v15'
 #process.GlobalTag.globaltag = '76X_dataRun2_v19'
-process.GlobalTag.globaltag = '80X_dataRun2_Prompt_v9'# PATRIZIA
+#process.GlobalTag.globaltag = '80X_dataRun2_Prompt_v9'# PATRIZIA
+process.GlobalTag.globaltag = '74X_dataRun2_Prompt_v1' # Matt
 
 
 
@@ -53,7 +54,8 @@ process.source = cms.Source("PoolSource",
 
 #'file:/afs/cern.ch/user/m/mquittna/public/exo/EXOMoriond16_v6_0T/pickeventsrunC.root'
 #'file:/afs/cern.ch/work/p/pbarria/public/SingleEvent/CMSSW_8_3_0/src/JetMETCorrections/MCJet/pick1eventRUN274244.root'
-  'file:/afs/cern.ch/user/m/mjoyce/WorkingArea/Ecal/CMSSW_8_3_0/src/JetMETCorrections/MCJet/pickevents_ECAL_cell_RECO.root'
+#  'file:/afs/cern.ch/user/m/mjoyce/WorkingArea/Ecal/CMSSW_8_3_0/src/JetMETCorrections/MCJet/EventCheck/pickevents_test.root'
+  'file:/afs/cern.ch/user/m/mjoyce/WorkingArea/Ecal/CMSSW_8_3_0/src/JetMETCorrections/MCJet/EventCheck/pickevents.root'
  ))
 
 
@@ -76,7 +78,7 @@ EBRecHitCollection   = cms.string('ReducedEcalRecHitsEB'),
 EERecHitCollection   = cms.string('ReducedEcalRecHitsEE'),
 IsMC                 = cms.bool(False),  # set to True if using MC
 cleaningConfig       = cleaningAlgoConfig,
-#run                  = cms.string('run'),  # Matt
+
 
 # bunch structure, run 200473 - 50ns
 bunchstartbx         = cms.vint32(66,146,226,306,413,493,573,653,773,853,960,1040,1120,1200,1307,1387,1467,1547,1667,1747,1854,1934,2014,2094,2201,2281,2361,2441,2549,2629,2736,2816,2896,2976,3083,3163,3243,3323)
