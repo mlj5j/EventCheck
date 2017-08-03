@@ -1275,7 +1275,7 @@ void EventAnalyser::analyze(edm::Event const& event, edm::EventSetup const& iSet
   }
   
 //################################Added by Matte Joyce##################################
-//eletron stuff
+//electron stuff
 
    edm::Handle<reco::GsfElectronCollection> EBelec;
    event.getByToken(tok_elec,EBelec);
@@ -1294,7 +1294,7 @@ void EventAnalyser::analyze(edm::Event const& event, edm::EventSetup const& iSet
        float elec_ptout = gsfIter->trackMomentumOut().R();
        cout << " elec ptvtx,ptout=" << elec_ptvtx << " " << elec_ptout << endl;
 
-       float elec_eoverp = fsfIter->eSuperClusterOverP();
+       float elec_eoverp = gsfIter->eSuperClusterOverP();
        cout << " elec eSC/p=" << elec_eoverp << endl;
 
    }
